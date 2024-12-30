@@ -33,6 +33,7 @@ def get_dragon_knight_dragon_blood(lvl):
     return result
 
 
+# Luna Innate
 def get_luna_lunar_blessing(lvl, stats):
     if stats.lower() == "attack damage":
         result = 2 * lvl
@@ -41,6 +42,7 @@ def get_luna_lunar_blessing(lvl, stats):
     return result
 
 
+# Sven Facet
 def get_sven_wrath_of_god(lvl):
     if lvl >= 1 and lvl <= 5:
         bonus_per_strength = 0.4
@@ -55,6 +57,7 @@ def get_sven_wrath_of_god(lvl):
     return bonus_per_strength
 
 
+# Ursa Innate
 def get_ursa_maul(lvl):
     if lvl >= 1 and lvl <= 5:
         health_as_damage = round(1.2 / 100, 3)
@@ -69,6 +72,7 @@ def get_ursa_maul(lvl):
     return health_as_damage
 
 
+# Sniper Innate
 def get_sniper_keen_scope(lvl):
     if lvl >= 1 and lvl <= 5:
         result = 160
@@ -81,31 +85,37 @@ def get_sniper_keen_scope(lvl):
     return result
 
 
+# Razor Innate
 def get_razor_unstable_current(lvl):
     result = 1 + (lvl / 100)
     return result
 
 
+# Death Prophet Innate
 def get_death_prophet_witchcraft(lvl):
     result = 1 + (lvl * 0.75 / 100)
     return result
 
 
+# Void Spirit Innate
 def get_void_spirit_intrinsic_edge():
     result = 1.25
     return result
 
 
+# Outwolrd Destroyer Innate
 def get_outworld_destroyer_ominous_discernment():
     result = 2.5
     return result
 
 
+# Crystal Maiden Innate
 def get_crystal_maiden_blueheart_floe():
     result = 1.5
     return result
 
 
+# Drow Ranger Innate
 def get_drow_ranger_precision_aura(lvl):
     result = 1 + (lvl * 0.02)
     return result

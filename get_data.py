@@ -1,8 +1,9 @@
+# This file can be ignored as the data already exists in assets/data directory
+
 import os
 import re
 import time
 import requests
-import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -205,6 +206,7 @@ def get_data_from_api(url):
     return df
 
 
+# Get Data From Website
 def get_hero(df_api):
 
     base_url = "https://liquipedia.net/dota2/"
@@ -390,6 +392,7 @@ def create_df_hero_roles(df, df_roles):
     return df_hero_roles
 
 
+# Download Image from the website
 def download_image(url, pattern, directory_name):
     # Get Current Directory
     cd = os.getcwd()
@@ -409,6 +412,7 @@ def download_image(url, pattern, directory_name):
         time.sleep(1)
 
 
+# Download Map Icon from the website
 def download_map_icon(url):
     # Get Current Directory
     cd = os.getcwd()
@@ -498,7 +502,6 @@ def save_df_csv(df, file_name):
 
 
 # --------------------------------------------------------------------
-# SCRIPTING
 # Create Assets Directory to store data
 create_directory("assets")
 

@@ -1,3 +1,5 @@
+# This file can be ignored as the data already exists in assets/data directory
+
 import numpy as np
 import pandas as pd
 from datetime import datetime
@@ -24,6 +26,7 @@ def move_columns(df, start, end, at):
     return new_col_order
 
 
+# This function calculate the base stats at 1 and without innate or facets
 def calc_health(row):
     result = 120 + row["base_strength"] * 22
     return result
