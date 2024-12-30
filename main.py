@@ -1,120 +1,14 @@
-import os
 import calc_stats
 import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
 
-
 df = pd.read_csv("./assets/data/hero_cleaned.csv")
 
-# df.head()
-
-
-def get_bar_chart_heroes_base_attribute(df, heroes_option):
-    # Filter DataFrame based on dropdown or select box
-    filtered_df = df.query("name in @heroes_option")
-    index_position = df.index.get_loc(filtered_df.index[0])
-
-    # Transpose the DataFrame
-    source = (
-        filtered_df[["base_strength", "base_agility", "base_intelligence"]]
-        .transpose()
-        .reset_index()
-        .rename(
-            columns={"index": "base_attributes", index_position: "attribute_points"}
-        )
-        .sort_index()
-    )
-
-    # Remove base_ and Set to Capital
-    source["base_attributes"] = (
-        source["base_attributes"].str.replace("base_", "").str.capitalize()
-    )
-
-    color_scale = alt.Scale(
-        domain=source["base_attributes"].tolist(),
-        range=["#ec3d06", "#26e030", "#00d9ec"],
-    )
-
-    chart = (
-        alt.Chart(source)
-        .mark_bar()
-        .encode(
-            alt.X("base_attributes", type="ordinal", sort=None)
-            .axis(labelAngle=0)
-            .title("Attributes"),
-            alt.Y("attribute_points")
-            .axis(tickCount=5)
-            .scale(zero=False)
-            .title("Attribute Points"),
-            color=alt.Color(
-                "base_attributes",
-                scale=color_scale,
-                legend=alt.Legend(title="Attributes"),
-            ),
-            tooltip=[
-                alt.Tooltip("base_attributes", title="Attribute"),
-                alt.Tooltip("attribute_points", title="Attribute Points"),
-            ],
-        )
-        .configure_axis(
-            labelFontSize=15,
-            titleFontSize=15,
-        )
-        .configure_title(fontSize=30)
-        .configure_legend(titleFontSize=20, labelFontSize=15)
-        .properties(title="Base Attributes", width=800, height=400)
-    )
-    return chart
-
-
-st.title("Dota 2 Heroes")
-
-
-# form_values = {
-#     "name": None,
-#     "heroes": None
-# }
-
-
-# with st.form(key="user_inf")
-
-
-heroes_option = st.selectbox("Choose Heroes:", df.loc[:, "name"].sort_values().tolist())
-
-st.write("You Selected:", heroes_option)
-
-primary_attribute = df.query("name in @heroes_option")["primary_attribute"].iloc[0]
-st.write(primary_attribute)
-
-image_path = df.query("name in @heroes_option")["image_path"].iloc[0]
-
-st.image(f"./{image_path}", caption=heroes_option)
-
-chart = get_bar_chart_heroes_base_attribute(df, heroes_option)
-
-st.altair_chart(chart)
-
-# Text Input (Search Function)
-hero_input = st.text_input("Search Heroes")
-
-# Filter by Attributes
-attribute_option = st.selectbox(
-    "Choose Attribute:", df.loc[:, "primary_attribute"].unique().tolist()
-)
-
-
-hero_output = df.query(
-    f"name.str.contains('{hero_input.capitalize()}') and primary_attribute in @attribute_option"
-)[["name", "primary_attribute"]]
-
-# Output as Table
-st.table(hero_output)
-
-# Compare
-
-st.header("Compare Heroes Stats")
+st.title("Dota2Stats")
+st.header("Heroes Stats Comparison")
+st.subheader("Version: 7.37e")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -125,6 +19,9 @@ with col1:
         key="hero_option1",
         index=0,
     )
+    image_path1 = df.query("name in @hero_option1")["image_path"].iloc[0]
+    st.image(f"./{image_path1}")
+
 
 with col2:
     st.subheader("Hero 2")
@@ -134,21 +31,10 @@ with col2:
         key="hero_option2",
         index=1,
     )
+    image_path2 = df.query("name in @hero_option2")["image_path"].iloc[0]
+    st.image(f"./{image_path2}")
 
-# options = [
-#     "Strength",
-#     "Agility",
-#     "Intelligence",
-#     "Health",
-#     "Health Regeneration",
-#     "Mana",
-#     "Mana Regeneration",
-#     "Armor",
-#     "Magic Resistance",
-#     "Damage",
-#     "Attack Speed",
-# ]
-
+# Dropdown Options
 options = [
     "Health",
     "Health Regeneration",
@@ -157,12 +43,20 @@ options = [
     "Armor",
     "Magic Resistance",
     "Attack Speed",
+    "Attack Damage",
+    "Strength",
+    "Agility",
+    "Intelligence",
 ]
+# Sort the Dropdown Options
+options.sort()
 
+# Create a Dropdown
 stat_options = st.selectbox(
     "Choose Stats:", options=options, key="stat_options", index=0
 )
 
+# Filter DataFrame from hero selected in Dropdown
 filtered_df = df.query("name in @hero_option1 or name in @hero_option2")
 
 
@@ -188,6 +82,22 @@ def get_comparison_chart(df, stats):
     elif stats == "Attack Speed":
         chart = get_bar_chart(
             reshape_df(df, calc_stats.calc_attack_speed, stats), stats
+        )
+    elif stats == "Attack Damage":
+        chart = get_bar_chart(
+            reshape_df(df, calc_stats.calc_avg_attack_damage, stats), stats
+        )
+    elif stats == "Strength":
+        chart = get_bar_chart(
+            reshape_df(df, calc_stats.calc_total_strength, stats), stats
+        )
+    elif stats == "Agility":
+        chart = get_bar_chart(
+            reshape_df(df, calc_stats.calc_total_agility, stats), stats
+        )
+    elif stats == "Intelligence":
+        chart = get_bar_chart(
+            reshape_df(df, calc_stats.calc_total_intelligence, stats), stats
         )
 
     return chart
@@ -232,36 +142,11 @@ def get_bar_chart(df, stats):
         )
         .configure_title(fontSize=30)
         .configure_legend(titleFontSize=15, labelFontSize=15)
-        .properties(title=f"{stats} Comparison", width=800, height=400)
+        .properties(title=stats, width=800, height=450)
     )
 
     return chart
 
 
+# Display Altair Chart
 st.altair_chart(get_comparison_chart(filtered_df, stat_options))
-
-# chart_comparison = (
-#     alt.Chart(df_melt)
-#     .mark_bar()
-#     .encode(
-#         alt.X("lvl", type="ordinal", sort=None).title("Level"),
-#         alt.Y("stats", type="quantitative").axis(tickCount=5).title("Armor"),
-#         alt.Color("name").title("Name"),
-#         alt.XOffset("name"),
-#         tooltip=[
-#             alt.Tooltip("lvl", title="Level"),
-#             alt.Tooltip("stats", title="Armor", format=".1f"),
-#             alt.Tooltip("name", title="Name"),
-#         ],
-#     )
-#     .configure_axis(
-#         labelFontSize=15,
-#         labelAngle=0,
-#         titleFontSize=15,
-#     )
-#     .configure_title(fontSize=30)
-#     .configure_legend(titleFontSize=15, labelFontSize=15)
-#     .properties(title="Armor Comparison", width=800, height=400)
-# )
-
-# st.altair_chart(chart_comparison)
