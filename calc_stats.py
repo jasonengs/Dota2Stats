@@ -111,23 +111,39 @@ def get_drow_ranger_precision_aura(lvl):
     return result
 
 
-def calc_health(row, lvl):
-    # Invoker has no bonus attributes
+def calc_total_strength(row, lvl):
+    # Invoker has no bonus attribute
     bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-
-    total_strength = np.floor(
-        get_total_attributes(row["base_strength"], row["strength_gain"], lvl, bonus)
+    result = get_total_attributes(
+        row["base_strength"], row["strength_gain"], lvl, bonus
     )
+    return result
+
+
+def calc_total_agility(row, lvl):
+    # Invoker has no bonus attribute
+    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
+    result = get_total_attributes(row["base_agility"], row["agility_gain"], lvl, bonus)
+    return result
+
+
+def calc_total_intelligence(row, lvl):
+    # Invoker has no bonus attribute
+    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
+    result = get_total_attributes(
+        row["base_intelligence"], row["intelligence_gain"], lvl, bonus
+    )
+    return result
+
+
+def calc_health(row, lvl):
+    total_strength = np.floor(calc_total_strength(row, lvl))
     result = 120 + total_strength * 22
     return result
 
 
 def calc_health_regeneration(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_strength = get_total_attributes(
-        row["base_strength"], row["strength_gain"], lvl, bonus
-    )
+    total_strength = calc_total_strength(row, lvl)
     health_regeneration_per_strength = 0.1
     if row["name"] == "Dragon Knight":
         health_regeneration_bonus = get_dragon_knight_dragon_blood(lvl)
@@ -149,19 +165,11 @@ def calc_health_regeneration(row, lvl):
 
 
 def calc_mana(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_intelligence = np.floor(
-        get_total_attributes(
-            row["base_intelligence"], row["intelligence_gain"], lvl, bonus
-        )
-    )
+    total_intelligence = np.floor(calc_total_intelligence(row, lvl))
     if row["name"] == "Huskar":
         result = np.nan
     elif row["name"] == "Ogre Magi":
-        total_strength = get_total_attributes(
-            row["base_strength"], row["strength_gain"], lvl, bonus
-        )
+        total_strength = calc_total_strength(row, lvl)
         result = 120 + np.floor(total_strength * 6)
     elif row["name"] == "Outworld Destroyer":
         mana_per_intelligence_bonus = get_outworld_destroyer_ominous_discernment()
@@ -172,15 +180,11 @@ def calc_mana(row, lvl):
 
 
 def calc_mana_regeneration(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_intelligence = get_total_attributes(
-        row["base_intelligence"], row["intelligence_gain"], lvl, bonus
-    )
+    total_intelligence = calc_total_intelligence(row, lvl)
     mana_regeneration_per_intelligence = 0.05
     if row["name"] == "Huskar":
         result = np.nan
-    if row["name"] == "Lich":
+    elif row["name"] == "Lich":
         result = np.float32(0)
     elif row["name"] == "Crystal Maiden":
         mana_regeneration_amplification = get_crystal_maiden_blueheart_floe()
@@ -193,9 +197,7 @@ def calc_mana_regeneration(row, lvl):
             2,
         )
     elif row["name"] == "Ogre Magi":
-        total_strength = get_total_attributes(
-            row["base_strength"], row["strength_gain"], lvl, bonus
-        )
+        total_strength = calc_total_strength(row, lvl)
         result = round(row["base_mana_regeneration"] + total_strength * 0.02, 2)
     elif row["name"] == "Void Spirit":
         mana_regeneration_per_intelligence_bonus = get_void_spirit_intrinsic_edge()
@@ -218,11 +220,7 @@ def calc_mana_regeneration(row, lvl):
 
 
 def calc_attack_speed(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_agility = get_total_attributes(
-        row["base_agility"], row["agility_gain"], lvl, bonus
-    )
+    total_agility = calc_total_agility(row, lvl)
     if row["name"] == "Drow Ranger":
         agility_bonus = get_drow_ranger_precision_aura(lvl)
     else:
@@ -232,11 +230,7 @@ def calc_attack_speed(row, lvl):
 
 
 def calc_armor(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_agility = get_total_attributes(
-        row["base_agility"], row["agility_gain"], lvl, bonus
-    )
+    total_agility = calc_total_agility(row, lvl)
     armor_per_agility = 1 / 6
     if row["name"] == "Dragon Knight":
         armor_bonus = get_dragon_knight_dragon_blood(lvl)
@@ -261,12 +255,8 @@ def calc_armor(row, lvl):
 
 
 def calc_magic_resistance(row, lvl):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
     magic_resistance_per_intelligence = 0.1
-    total_intelligence = get_total_attributes(
-        row["base_intelligence"], row["intelligence_gain"], lvl, bonus
-    )
+    total_intelligence = calc_total_intelligence(row, lvl)
     if row["name"] == "Void Spirit":
         magic_resistance_per_intelligence_bonus = get_void_spirit_intrinsic_edge()
     elif row["name"] == "Ogre Magi":
@@ -284,18 +274,8 @@ def calc_magic_resistance(row, lvl):
 
 
 def calc_attack_damage(row, lvl, stats):
-    # Invoker has no bonus attributes
-    bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    total_strength = get_total_attributes(
-        row["base_strength"], row["strength_gain"], lvl, bonus
-    )
-    total_agility = get_total_attributes(
-        row["base_agility"], row["agility_gain"], lvl, bonus
-    )
-    total_intelligence = get_total_attributes(
-        row["base_intelligence"], row["intelligence_gain"], lvl, bonus
-    )
     if row["primary_attribute"] == "Strength":
+        total_strength = calc_total_strength(row, lvl)
         if row["name"] == "Sven":
             attack_damage_bonus = get_sven_wrath_of_god(lvl)
             attack_damage_reduction = 20
@@ -309,6 +289,7 @@ def calc_attack_damage(row, lvl, stats):
             + np.floor(total_strength * attack_damage_bonus)
         )
     elif row["primary_attribute"] == "Agility":
+        total_agility = calc_total_agility(row, lvl)
         if row["name"] == "Drow Ranger":
             attack_damage_bonus = get_drow_ranger_precision_aura(lvl)
             result = np.floor(
@@ -320,7 +301,7 @@ def calc_attack_damage(row, lvl, stats):
                 row[f"base_{stats}_attack"] + total_agility + attack_damage_bonus
             )
         elif row["name"] == "Ursa":
-            total_health = 120 + np.floor(total_strength) * 22
+            total_health = calc_health(row, lvl)
             attack_damage_bonus = get_ursa_maul(lvl)
             result = np.floor(
                 row[f"base_{stats}_attack"]
@@ -330,6 +311,7 @@ def calc_attack_damage(row, lvl, stats):
         else:
             result = np.floor(row[f"base_{stats}_attack"] + total_agility)
     elif row["primary_attribute"] == "Intelligence":
+        total_intelligence = calc_total_intelligence(row, lvl)
         if row["name"] == "Jakiro":
             attack_damage_reduction = 50 / 100
             total_attack_damage_reduction = (
@@ -344,12 +326,31 @@ def calc_attack_damage(row, lvl, stats):
             result = np.floor((row[f"base_{stats}_attack"] + total_intelligence))
 
     elif row["primary_attribute"] == "Universal":
+        total_strength = calc_total_strength(row, lvl)
+        total_agility = calc_total_agility(row, lvl)
+        total_intelligence = calc_total_intelligence(row, lvl)
+
         point_per_attribute = 0.7
         result = np.floor(
             row[f"base_{stats}_attack"]
             + np.floor(total_strength + total_agility + total_intelligence)
             * point_per_attribute
         )
+    return result
+
+
+def calc_min_attack_damage(row, lvl):
+    result = calc_attack_damage(row, lvl, "min")
+    return result
+
+
+def calc_max_attack_damage(row, lvl):
+    result = calc_attack_damage(row, lvl, "max")
+    return result
+
+
+def calc_avg_attack_damage(row, lvl):
+    result = calc_attack_damage(row, lvl, "avg")
     return result
 
 
