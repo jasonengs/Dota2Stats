@@ -4,11 +4,11 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-df = pd.read_csv("./assets/data/hero_cleaned.csv")
+df = pd.read_csv("./assets/data/latest_data.csv")
 
 st.title("Dota2Stats")
 st.header("Heroes Stats Comparison")
-st.subheader("Version: 7.37e")
+st.subheader("Version: 7.38")
 
 col1, col2 = st.columns(2)
 with col1:

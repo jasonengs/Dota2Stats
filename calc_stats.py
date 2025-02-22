@@ -2,23 +2,23 @@ import numpy as np
 
 
 def get_bonus_attributes(row, lvl):
-    additional_bonus = 1 if row != "Morphling" else 2
+    additional_bonus = 0 if row != "Morphling" else 3
     if lvl >= 1 and lvl <= 16:
-        bonus = 0 * additional_bonus
+        bonus = 0 * (additional_bonus * 0)
     elif lvl >= 17 and lvl <= 18:
-        bonus = 2 * additional_bonus
+        bonus = 2 + (additional_bonus * 1)
     elif lvl >= 19 and lvl <= 20:
-        bonus = 4 * additional_bonus
+        bonus = 4 + (additional_bonus * 2)
     elif lvl == 21:
-        bonus = 6 * additional_bonus
+        bonus = 6 + (additional_bonus * 3)
     elif lvl == 22:
-        bonus = 8 * additional_bonus
+        bonus = 8 + (additional_bonus * 4)
     elif lvl == 23:
-        bonus = 10 * additional_bonus
+        bonus = 10 + (additional_bonus * 5)
     elif lvl >= 24 and lvl <= 25:
-        bonus = 12 * additional_bonus
+        bonus = 12 + (additional_bonus * 6)
     elif lvl >= 26:
-        bonus = 14 * additional_bonus
+        bonus = 14 + (additional_bonus * 7)
     return bonus
 
 
@@ -45,13 +45,13 @@ def get_luna_lunar_blessing(lvl, stats):
 # Sven Facet
 def get_sven_wrath_of_god(lvl):
     if lvl >= 1 and lvl <= 5:
-        bonus_per_strength = 0.4
+        bonus_per_strength = 0.0
     elif lvl >= 6 and lvl <= 11:
-        bonus_per_strength = 0.5
+        bonus_per_strength = 0.3
     elif lvl >= 12 and lvl <= 17:
-        bonus_per_strength = 0.6
+        bonus_per_strength = 0.4
     elif lvl >= 18:
-        bonus_per_strength = 0.7
+        bonus_per_strength = 0.5
     else:
         bonus_per_strength = 0.0
     return bonus_per_strength
@@ -93,7 +93,7 @@ def get_razor_unstable_current(lvl):
 
 # Death Prophet Innate
 def get_death_prophet_witchcraft(lvl):
-    result = 1 + (lvl * 0.75 / 100)
+    result = 1 + (lvl * 0.5 / 100)
     return result
 
 
@@ -110,14 +110,32 @@ def get_outworld_destroyer_ominous_discernment():
 
 
 # Crystal Maiden Innate
-def get_crystal_maiden_blueheart_floe():
-    result = 1.5
-    return result
+def get_crystal_maiden_blueheart_floe(lvl):
+    if lvl >= 1 and lvl <= 5:
+        mana_regeneration_amplification = 1.25
+    elif lvl >= 6 and lvl <= 11:
+        mana_regeneration_amplification = 1.50
+    elif lvl >= 12 and lvl <= 17:
+        mana_regeneration_amplification = 1.75
+    elif lvl >= 18:
+        mana_regeneration_amplification = 2.0
+    else:
+        mana_regeneration_amplification = 0.0
+    return mana_regeneration_amplification
 
 
 # Drow Ranger Innate
 def get_drow_ranger_precision_aura(lvl):
-    result = 1 + (lvl * 0.02)
+    if lvl >= 1 and lvl <= 5:
+        result = 1.04 + (lvl * 0.01)
+    elif lvl >= 6 and lvl <= 11:
+        result = 1.08 + (lvl * 0.01)
+    elif lvl >= 12 and lvl <= 17:
+        result = 1.12 + (lvl * 0.01)
+    elif lvl >= 18:
+        result = 1.16 + (lvl * 0.01)
+    else:
+        result = 0.0
     return result
 
 
@@ -133,7 +151,15 @@ def calc_total_strength(row, lvl):
 def calc_total_agility(row, lvl):
     # Invoker has no bonus attribute
     bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
-    result = get_total_attributes(row["base_agility"], row["agility_gain"], lvl, bonus)
+    total_agility = get_total_attributes(
+        row["base_agility"], row["agility_gain"], lvl, bonus
+    )
+
+    if row["name"] == "Drow Ranger":
+        agility_bonus = get_drow_ranger_precision_aura(lvl)
+        result = np.round(total_agility * agility_bonus)
+    else:
+        result = total_agility
     return result
 
 
@@ -197,7 +223,7 @@ def calc_mana_regeneration(row, lvl):
     elif row["name"] == "Lich":
         result = np.float32(0)
     elif row["name"] == "Crystal Maiden":
-        mana_regeneration_amplification = get_crystal_maiden_blueheart_floe()
+        mana_regeneration_amplification = get_crystal_maiden_blueheart_floe(lvl)
         result = round(
             (
                 row["base_mana_regeneration"]
@@ -231,11 +257,7 @@ def calc_mana_regeneration(row, lvl):
 
 def calc_attack_speed(row, lvl):
     total_agility = calc_total_agility(row, lvl)
-    if row["name"] == "Drow Ranger":
-        agility_bonus = get_drow_ranger_precision_aura(lvl)
-    else:
-        agility_bonus = 1
-    result = round(row["base_attack_speed"] + total_agility * (1 * agility_bonus))
+    result = round(row["base_attack_speed"] + total_agility)
     return result
 
 
@@ -245,9 +267,6 @@ def calc_armor(row, lvl):
     if row["name"] == "Dragon Knight":
         armor_bonus = get_dragon_knight_dragon_blood(lvl)
         armor_per_agility_bonus = 1
-    elif row["name"] == "Drow Ranger":
-        armor_bonus = 0
-        armor_per_agility_bonus = get_drow_ranger_precision_aura(lvl)
     elif row["name"] == "Void Spirit":
         armor_bonus = 0
         armor_per_agility_bonus = get_void_spirit_intrinsic_edge()
@@ -288,24 +307,17 @@ def calc_attack_damage(row, lvl, stats):
         total_strength = calc_total_strength(row, lvl)
         if row["name"] == "Sven":
             attack_damage_bonus = get_sven_wrath_of_god(lvl)
-            attack_damage_reduction = 20
         else:
             attack_damage_bonus = 0
-            attack_damage_reduction = 0
 
         result = np.floor(
-            (row[f"base_{stats}_attack"] - attack_damage_reduction)
+            (row[f"base_{stats}_attack"])
             + total_strength
             + np.floor(total_strength * attack_damage_bonus)
         )
     elif row["primary_attribute"] == "Agility":
         total_agility = calc_total_agility(row, lvl)
-        if row["name"] == "Drow Ranger":
-            attack_damage_bonus = get_drow_ranger_precision_aura(lvl)
-            result = np.floor(
-                row[f"base_{stats}_attack"] + total_agility * (attack_damage_bonus)
-            )
-        elif row["name"] == "Luna":
+        if row["name"] == "Luna":
             attack_damage_bonus = get_luna_lunar_blessing(lvl, "attack damage")
             result = np.floor(
                 row[f"base_{stats}_attack"] + total_agility + attack_damage_bonus
@@ -340,7 +352,7 @@ def calc_attack_damage(row, lvl, stats):
         total_agility = calc_total_agility(row, lvl)
         total_intelligence = calc_total_intelligence(row, lvl)
 
-        point_per_attribute = 0.7
+        point_per_attribute = 0.45
         result = np.floor(
             row[f"base_{stats}_attack"]
             + np.floor(total_strength + total_agility + total_intelligence)
