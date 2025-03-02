@@ -397,7 +397,7 @@ def download_image(url, pattern, directory_name):
     # Get Current Directory
     cd = os.getcwd()
     # Get New Directory Path
-    new_directory = os.path.join(cd, "assets", directory_name)
+    new_directory = os.path.join(cd, "assets/images", directory_name)
     # Create another directory
     os.makedirs(new_directory, exist_ok=True)
 
@@ -413,11 +413,11 @@ def download_image(url, pattern, directory_name):
 
 
 # Download Map Icon from the website
-def download_map_icon(url):
+def download_hero_icon(url):
     # Get Current Directory
     cd = os.getcwd()
     # Get Map Icon Path
-    map_icon_path = os.path.join(cd, "assets", "map_icon")
+    map_icon_path = os.path.join(cd, "assets/images", "hero_icons")
     # Create another directory
     os.makedirs(map_icon_path, exist_ok=True)
     # Regex Pattern
@@ -448,11 +448,11 @@ def get_png_from_directory(directory_name):
     # Get Current Directory
     cd = os.getcwd()
     # Get Path
-    full_path = os.path.join(cd, "assets", directory_name)
+    full_path = os.path.join(cd, "assets/images", directory_name)
     # List all the files in directory
     if os.path.exists(full_path):
         results = [
-            os.path.join("assets", directory_name, file)
+            os.path.join("assets/images", directory_name, file)
             for file in os.listdir(full_path)
         ]
     # Return the results
@@ -465,7 +465,8 @@ def create_df_for_img(directory_name):
 
     # Remove the png use regex
     name = [
-        re.search(rf"assets/{directory_name}/(.+?)\.png", i).group(1) for i in img_path
+        re.search(rf"assets/images/{directory_name}/(.+?)\.png", i).group(1)
+        for i in img_path
     ]
     df = pd.DataFrame(
         data={
@@ -507,9 +508,12 @@ create_directory("assets")
 
 data_directory = os.path.join(os.getcwd(), "assets", "data")
 
-# Crate Data Directory inside thg Assets Directory
+# Create Data Directory inside thg Assets Directory
 create_directory(data_directory)
 
+image_directory = os.path.join(os.getcwd(), "assets", "images")
+# Create Image Directory for storing png file
+create_directory(image_directory)
 
 url = "https://api.opendota.com/api/heroes"
 df_data_from_api = get_data_from_api(url)
@@ -548,12 +552,12 @@ df_roles = create_df_roles(df)
 df_hero_roles = create_df_hero_roles(df, df_roles)
 
 # Download Image
-download_image(df["image"], r"(?<=\/)([^/]+)(?=_Large)", "image")
-df_image = create_df_for_img("image")
+download_image(df["image"], r"(?<=\/)([^/]+)(?=_Large)", "hero_images")
+df_image = create_df_for_img("hero_images")
 
 # Download Map Icon
-download_map_icon(df["map_icon"])
-df_map_icon = create_df_for_img("map_icon")
+download_hero_icon(df["map_icon"])
+df_map_icon = create_df_for_img("hero_icons")
 
 
 df = (
