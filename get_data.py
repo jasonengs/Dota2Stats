@@ -68,7 +68,7 @@ def get_quote(soup):
 
 
 def get_full_name(soup):
-    result = soup.find("div", class_="quote-source").getText().split(" ", 1)[-1]
+    result = soup.find("div", class_="quote-source").getText().split(" ", 1)[-1].strip()
     return result
 
 

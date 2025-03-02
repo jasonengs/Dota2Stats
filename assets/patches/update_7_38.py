@@ -453,5 +453,34 @@ df = df.assign(
     avg_attack=df.apply(calc_stats.calc_attack_damage, axis=1, lvl=1, stats="avg"),
 )
 
+# Remove leading Space
+df["full_name"] = df["full_name"].apply(lambda x: x.strip(" "))
+
+df = df.assign(
+    hero_images_path=df.apply(
+        lambda x: f"assets/images/hero_images/{x['name'].lower().replace(' ', '_')}.png",
+        axis=1,
+    ),
+    hero_icons_path=df.apply(
+        lambda x: f"assets/images/hero_icons/{x['name'].lower().replace(' ', '_')}.png",
+        axis=1,
+    ),
+)
+
+df = df.drop(columns=["image_path", "map_icon_path"])
+
+# Modify Attribute Icons
+df_attribute = pd.read_csv("../data/attribute_icons.csv")
+
+df_attribute["attribute_icons_path"] = df_attribute.apply(
+    lambda x: f"assets/images/attribute_icons/{x['name_as_key'].lower()}.png",
+    axis=1,
+)
+
+df_attribute["name_as_key"] = df_attribute["name_as_key"].apply(
+    lambda x: x.capitalize()
+)
 
 df.to_csv("../data/latest_data.csv", index=False)
+
+df_attribute.to_csv("../data/attribute_icons.csv", index=False)

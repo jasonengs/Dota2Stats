@@ -19,7 +19,7 @@ with col1:
         key="hero_option1",
         index=0,
     )
-    image_path1 = df.query("name in @hero_option1")["image_path"].iloc[0]
+    image_path1 = df.query("name in @hero_option1")["hero_images_path"].iloc[0]
     st.image(f"./{image_path1}")
 
 
@@ -31,7 +31,7 @@ with col2:
         key="hero_option2",
         index=1,
     )
-    image_path2 = df.query("name in @hero_option2")["image_path"].iloc[0]
+    image_path2 = df.query("name in @hero_option2")["hero_images_path"].iloc[0]
     st.image(f"./{image_path2}")
 
 # Dropdown Options
