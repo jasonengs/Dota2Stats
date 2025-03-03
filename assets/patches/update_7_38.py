@@ -457,13 +457,11 @@ df = df.assign(
 df["full_name"] = df["full_name"].apply(lambda x: x.strip(" "))
 
 df = df.assign(
-    hero_images_path=df.apply(
-        lambda x: f"assets/images/hero_images/{x['name'].lower().replace(' ', '_')}.png",
-        axis=1,
+    hero_images_path=df["image_path"].str.replace(
+        "assets/image/", "assets/images/hero_images/", regex=True
     ),
-    hero_icons_path=df.apply(
-        lambda x: f"assets/images/hero_icons/{x['name'].lower().replace(' ', '_')}.png",
-        axis=1,
+    hero_icons_path=df["image_path"].str.replace(
+        "assets/image/", "assets/images/hero_icons/", regex=True
     ),
 )
 
