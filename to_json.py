@@ -1,10 +1,12 @@
 import json
+
 import pandas as pd
 
 
-def rename_columns(column):
+def rename_columns(df):
+    columns = df.columns.to_list()
     results = []
-    for i in column:
+    for i in columns:
         split_column_name = i.split("_")
 
         if len(split_column_name) > 1:
@@ -16,6 +18,21 @@ def rename_columns(column):
         else:
             results.append(split_column_name[0])
     return results
+
+
+def move_columns(df, start, end, at):
+    col = df.columns.tolist()
+
+    cols_to_move = col[start:end]
+    cols_to_keep = [c for c in col if c not in cols_to_move]
+
+    insert_col_at = at
+
+    new_col_order = (
+        cols_to_keep[:insert_col_at] + cols_to_move + cols_to_keep[insert_col_at:]
+    )
+
+    return new_col_order
 
 
 df = pd.read_csv("./assets/data/latest_data.csv")
@@ -30,9 +47,6 @@ df = df.drop(
         "armor",
         "magic_resistance",
         "attack_speed",
-        "min_attack",
-        "max_attack",
-        "avg_attack",
     ]
 )
 
@@ -64,44 +78,31 @@ df_final = df_merge.merge(df_roles_merge, how="inner", left_on="id", right_on="h
 # Remove hero id column from df_roles_merge
 df_final = df_final.drop(columns=["hero_id"])
 
-
-renamed_column = rename_columns(df_final.columns.to_list())
+# Rename columns
+renamed_column = rename_columns(df_final)
 
 for i, col in enumerate(df_final.columns):
     df_final.columns.values[i] = renamed_column[i]
 
+# Move columns
+# df = df[move_columns(df, 14, 15, 6)]
+
+# Move Base Agility
+df_final = df_final[move_columns(df_final, 9, 10, 8)]
+
+# Move Base Intelligence
+df_final = df_final[move_columns(df_final, 11, 12, 9)]
+
+df_final = df_final[move_columns(df_final, 26, 33, 13)]
+
+df_final = df_final[move_columns(df_final, 21, 23, 20)]
+
 # Save to JSON
 df_final.to_json("./assets/data/latest_data.json", orient="records")
 
-stats_key = [
-    "baseStrength",
-    "baseAgility",
-    "baseIntelligence",
-    "strengthGain",
-    "agilityGain",
-    "intelligenceGain",
-    "baseHealth",
-    "baseMana",
-    "baseHealthRegeneration",
-    "baseManaRegeneration",
-    "baseArmor",
-    "baseAttackSpeed",
-    "baseMinAttack",
-    "baseMaxAttack",
-    "baseAvgAttack",
-    "attackRange",
-    "bat",
-    "projectileSpeed",
-    "attackPoint",
-    "attackBackswing",
-    "movementSpeedDaytime",
-    "turnRate",
-    "visionRangeDaytime",
-    "visionRangeNighttime",
-]
+stats_key = df_final.columns.to_list()[7:29]
 
-images_key = ["heroImagesPath", "heroIconsPath", "attributeIconsPath"]
-
+images_key = df_final.columns.to_list()[33:36]
 
 with open("./assets/data/latest_data.json", "r") as f:
     data = json.load(f)

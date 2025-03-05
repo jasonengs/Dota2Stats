@@ -3,10 +3,10 @@
 import os
 import re
 import time
-import requests
+
 import pandas as pd
+import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
 
 
 def create_directory(directory_name):
@@ -133,7 +133,7 @@ def get_stats(soup, stats, index=0):
                 .strip()
             )
             return result
-    except AttributeError as e:
+    except AttributeError:
         result = pd.NA
         return result
 
@@ -208,7 +208,6 @@ def get_data_from_api(url):
 
 # Get Data From Website
 def get_hero(df_api):
-
     base_url = "https://liquipedia.net/dota2/"
     base_strength_gain_per_lvl = []
     base_agility_gain_per_lvl = []
@@ -472,7 +471,7 @@ def create_df_for_img(directory_name):
         data={
             # Split the directory name by removing "_" and get the first index
             # for example attribute_icons to attribute
-            f"name_as_key": name,
+            "name_as_key": name,
             f"{directory_name}_path": img_path,
         }
     )
@@ -569,7 +568,7 @@ df = (
 )
 
 df["name_as_key"] = df["name"].apply(
-    lambda x: x.lower() if not "'" in x else x.replace("'", "").lower()
+    lambda x: x.lower() if "'" not in x else x.replace("'", "").lower()
 )
 
 df = df.merge(df_image, how="inner", on="name_as_key").merge(
@@ -590,4 +589,5 @@ download_image(attribute_icons, r"(?<=Dota2_)[^_]+(?=_icon)", "attribute_icons")
 df_attribute_icons = create_df_for_img("attribute_icons")
 
 # Save Attribute Icons as csv file
+save_df_csv(df_attribute_icons, "attribute_icons")
 save_df_csv(df_attribute_icons, "attribute_icons")

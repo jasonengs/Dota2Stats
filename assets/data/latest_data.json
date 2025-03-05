@@ -12,9 +12,9 @@
         "lore": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their unliving lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -35,7 +35,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -59,8 +59,8 @@
         "lore": "As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General. In battle after battle he proved his worth through gory deed. His rise through the ranks was helped by the fact that he never hesitated to decapitate a superior. Through the seven year Campaign of the Thousand Tarns, he distinguished himself in glorious carnage, his star of fame shining ever brighter, while the number of comrades in arms steadily dwindled. On the night of ultimate victory, Axe declared himself the new Red Mist General, and took on the ultimate title of 'Axe.' But his troops now numbered zero. Of course, many had died in battle, but a significant number had also fallen to Axe's blade. Needless to say, most soldiers now shun his leadership. But this matters not a whit to Axe, who knows that a one-man army is by far the best.",
         "released": "2010-11-01",
         "roles": [
-            "Initiator",
             "Durable",
+            "Initiator",
             "Disabler",
             "Carry"
         ],
@@ -83,7 +83,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -107,10 +107,10 @@
         "lore": "When the gods have nightmares, it is Bane Elemental who brings them. Also known as Atropos, Bane was born from the midnight terrors of the goddess Nyctasha. A force of terror too powerful to be contained by sleep, he surfaced from her slumbers, fed upon her immortality, and stole his vaporous form from her inky blood. He is the essence of fear. Mortals who hear his voice hear their darkest secrets whispered in their ear. He calls to the hidden fear in every Hero's heart. Wakefulness is no protection, for Bane's black blood, continuously dripping, is a tar that traps his enemies in nightmare. In the presence of Bane, every Hero remembers to fear the dark.",
         "released": "2012-03-01",
         "roles": [
-            "Nuker",
+            "Durable",
             "Disabler",
             "Support",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 23,
@@ -131,7 +131,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 1200
@@ -156,9 +156,9 @@
         "released": "2011-10-06",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 24,
@@ -179,7 +179,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.43,
             "attackBackswing": 0.74,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -203,9 +203,9 @@
         "lore": "Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Wellsprings and mountain rivers froze in moments if she stopped to rest nearby; ripening crops were bitten by frost, and fruiting orchards turned to mazes of ice and came crashing down, spoiled. When their exasperated parents packed Lina off to the equator, Rylai found herself banished to the cold northern realm of Icewrack, where she was taken in by an Ice Wizard who had carved himself a hermitage at the crown of the Blueheart Glacier. After long study, the wizard pronounced her ready for solitary practice and left her to take his place, descending into the glacier to hibernate for a thousand years. Her mastery of the Frozen Arts has only deepened since that time, and now her skills are unmatched.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 17,
@@ -226,7 +226,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.45,
             "attackBackswing": 0.0,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -273,7 +273,7 @@
             "projectileSpeed": 1250,
             "attackPoint": 0.5,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -298,9 +298,9 @@
         "released": "2010-11-01",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -321,7 +321,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.467,
             "attackBackswing": 0.863,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -368,7 +368,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.33,
             "attackBackswing": 0.84,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -394,9 +394,9 @@
         "roles": [
             "Nuker",
             "Disabler",
-            "Support",
+            "Escape",
             "Carry",
-            "Escape"
+            "Support"
         ],
         "stats": {
             "baseStrength": 20,
@@ -417,7 +417,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.35,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -441,11 +441,11 @@
         "lore": "For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity\u2019s inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey. On the eve of the ancient war of the Vloy, it punched down through the sky and lit a glowing trail across the night, a sign both armies took for an omen. The frozen ball melted in a flash of boiling heat, as below two forces enjoined in battle across the border of a narrow river. Thus freed from its icy stasis, the Morphling was born into conflict, an elemental power at one with the tides of the ocean, capricious and unconstrained. He entered the fight, instinctively taking the form of the first general who dared set foot across the water, and then struck him dead. As the motley warriors clashed, he shifted from form to form throughout the battle, instantly absorbing the ways of these strange creatures--now a footsoldier, now an archer, now the cavalryman--until, by the time the last soldier fell, Morphling had played every part. The battle's end was his beginning.",
         "released": "2010-11-01",
         "roles": [
+            "Durable",
             "Nuker",
             "Disabler",
-            "Durable",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 23,
@@ -466,7 +466,7 @@
             "projectileSpeed": 1300,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -490,8 +490,8 @@
         "lore": "It is said that Nevermore the Shadow Fiend has the soul of a poet, and in fact he has thousands of them. Over the ages he has claimed the souls of poets, priests, emperors, beggars, slaves, philosophers, criminals and (naturally) heroes; no sort of soul escapes him. What he does with them is unknown. No one has ever peered into the Abysm whence Nevermore reaches out like an eel from among astral rocks. Does he devour them one after another? Does he mount them along the halls of an eldritch temple, or pickle the souls in necromantic brine? Is he merely a puppet, pushed through the dimensional rift by a demonic puppeteer? Such is his evil, so intense his aura of darkness, that no rational mind may penetrate it. Of course, if you really want to know where the stolen souls go, there's one sure way to find out: Add your soul to his collection. Or just wait for Nevermore.",
         "released": "2011-05-26",
         "roles": [
-            "Nuker",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -512,7 +512,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.5,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -536,10 +536,10 @@
         "lore": "The remote village of Pole had no knowledge of the wars raging in the heart of the kingdom. For them, the quiet of spear fishing, and a family meal were all that a full life required. Yet war came for them nonetheless. Joining the able-bodied conscripts as they filed passed their homes, the humble lancer Azwraith vowed to bring peace to his kingdom, and in so doing, his people. Placed with his kin in the vanguard of the final assault against the Dread Magus Vorn, the cost to his fellows was absolute. As the charging force battled toward the fortress, Azwraith alone among his kind remained standing, and he alone was able to infiltrate the keep.Focused and infuriated by the slaughter of his brothers, Azwraith bested each of the wizard's deadly traps and conjured guardians. Soon the simple fisherman arrived at Vorn's tower sanctum. The pair dueled through the night, pike to staff, as chaos raged below, and with a deafening cry Azwraith pierced his enemy. But the wizard did not simply expire; he exploded into uncountable shards of light, penetrating his killer with power. As the dust settled and the smoke of combat began to clear, Azwraith found himself standing among a throng of his kin. Each seemed to be dressed as he was, each seemed armed as he was, and he could sense that each thought as he did. Aware that his allies were approaching, he willed these phantoms to hide themselves, and one by one they began to vanish into nothingness. As the soldiers came upon the sanctum, they found the warrior that had bested the wizard. When they approached their champion, the lancer vanished. The pikeman who had stood before them was no more than another phantom.",
         "released": "2012-05-03",
         "roles": [
-            "Nuker",
             "Pusher",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -560,7 +560,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -585,9 +585,9 @@
         "released": "2010-11-01",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Escape"
+            "Escape",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 17,
@@ -608,7 +608,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.5,
             "attackBackswing": 0.8,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -632,10 +632,10 @@
         "lore": "In the Fields of Endless Carnage, far to the south of Quoidge, a corpulent figure works tirelessly through the night--dismembering, disembowelling, piling up the limbs and viscera of the fallen that the battlefield might be clear by dawn. In this cursed realm, nothing can decay or decompose; no corpse may ever return to the earth from which it sprang, no matter how deep you dig the grave. Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them. Swish, swish, thunk. Flesh falls from the bone; tendons and ligaments part like wet paper. And while he always had a taste for the butchery, over the ages, Pudge has developed a taste for its byproduct as well. Starting with a gobbet of muscle here, a sip of blood there...before long he was thrusting his jaws deep into the toughest of torsos, like a dog gnawing at rags. Even those who are beyond fearing the Reaper, fear the Butcher.",
         "released": "2010-11-01",
         "roles": [
+            "Durable",
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 25,
@@ -656,7 +656,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 1.17,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -681,9 +681,9 @@
         "released": "2010-11-01",
         "roles": [
             "Durable",
-            "Nuker",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -704,7 +704,7 @@
             "projectileSpeed": 2000,
             "attackPoint": 0.3,
             "attackBackswing": 0.4,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -731,8 +731,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Escape"
+            "Escape",
+            "Support"
         ],
         "stats": {
             "baseStrength": 22,
@@ -753,7 +753,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.53,
             "attackBackswing": 0.47,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -780,8 +780,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 21,
@@ -789,7 +789,7 @@
             "baseIntelligence": 23,
             "strengthGain": 2.0,
             "agilityGain": 2.6,
-            "intelligenceGain": 3.9,
+            "intelligenceGain": 3.7,
             "baseHealthRegeneration": 0.5,
             "baseManaRegeneration": 0.0,
             "baseArmor": 1,
@@ -802,7 +802,7 @@
             "projectileSpeed": 1100,
             "attackPoint": 0.5,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -826,10 +826,10 @@
         "lore": "Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins. With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order, but only in himself. After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity. For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination. Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame. He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a rogue knight. He answers only to himself.",
         "released": "2010-11-01",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -851,7 +851,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -875,11 +875,11 @@
         "lore": "Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates. He is a Stone Giant now, but what did he used to be? A splinter broken from a Golem's heel? A shard swept from a gargoyle-sculptor's workshop? A fragment of the Oracular Visage of Garthos? A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people. As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.",
         "released": "2011-02-19",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
             "Pusher",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -901,7 +901,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 275,
+            "movementSpeed": 275,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -928,8 +928,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Escape"
+            "Escape",
+            "Support"
         ],
         "stats": {
             "baseStrength": 20,
@@ -950,7 +950,7 @@
             "projectileSpeed": 1500,
             "attackPoint": 0.33,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -976,16 +976,16 @@
         "roles": [
             "Nuker",
             "Disabler",
-            "Support",
+            "Escape",
             "Carry",
-            "Escape"
+            "Support"
         ],
         "stats": {
             "baseStrength": 18,
             "baseAgility": 17,
             "baseIntelligence": 18,
             "strengthGain": 2.6,
-            "agilityGain": 1.7,
+            "agilityGain": 1.9,
             "intelligenceGain": 3.2,
             "baseHealthRegeneration": 0.25,
             "baseManaRegeneration": 0.25,
@@ -999,7 +999,7 @@
             "projectileSpeed": 1250,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1023,8 +1023,8 @@
         "lore": "Lord of Heaven, father of gods, Zeus treats all the Heroes as if they are his rambunctious, rebellious children. After being caught unnumbered times in the midst of trysts with countless mortal women, his divine wife finally gave him an ultimatum: 'If you love mortals so much, go and become one. If you can prove yourself faithful, then return to me as my immortal husband. Otherwise, go and die among your creatures.' Zeus found her logic (and her magic) irrefutable, and agreed to her plan. He has been on his best behavior ever since, being somewhat fonder of immortality than he is of mortals. But to prove himself worthy of his eternal spouse, he must continue to pursue victory on the field of battle.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -1037,15 +1037,15 @@
             "baseManaRegeneration": 0.0,
             "baseArmor": 2,
             "baseAttackSpeed": 100,
-            "baseMinAttack": 33,
-            "baseMaxAttack": 41,
-            "baseAvgAttack": 37,
+            "baseMinAttack": 29,
+            "baseMaxAttack": 37,
+            "baseAvgAttack": 33,
             "attackRange": 380,
             "bat": 1.7,
             "projectileSpeed": 1100,
             "attackPoint": 0.35,
             "attackBackswing": 0.55,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1069,12 +1069,12 @@
         "lore": "As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet flung all its carnivorous ships at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide.As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the battle's peak, something in the clash of demons, men and atavistic spirits must have stirred a fourth power that had been slumbering in the depths. The waves rose up in towering spouts around the few remaining ships, and Maelrawn the Tentacular appeared amid the fray. His tendrils wove among the ships, drawing demon and human craft together, churning the water and wind into a raging chaos.What happened in the crucible of that storm, none may truly say. The Cataract roars off into the void, deserted by its former denizens. Kunkka is now The Admiral of but one ship, a ghostly rig which endlessly replays the final seconds of its destruction. Whether he died in that crash is anyone's guess. Not even Tidehunter, who summoned Maelrawn, knows for sure.",
         "released": "2011-10-06",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Durable",
-            "Carry"
+            "Carry",
+            "Support"
         ],
         "stats": {
             "baseStrength": 24,
@@ -1095,7 +1095,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1119,10 +1119,10 @@
         "lore": "The sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were the stuff of legend in the temperate region where they spent their quarrelsome childhoods together. Lina always had the advantage, however, for while Crystal was guileless and naive, Lina's fiery ardor was tempered by cleverness and conniving. The exasperated parents of these incompatible offspring went through half a dozen homesteads, losing one to fire, the next to ice, before they realized life would be simpler if the children were separated. As the oldest, Lina was sent far south to live with a patient aunt in the blazing Desert of Misrule, a climate that proved more than comfortable for the fiery Slayer. Her arrival made quite an impression on the somnolent locals, and more than one would-be suitor scorched his fingers or went away with singed eyebrows, his advances spurned. Lina is proud and confident, and nothing can dampen her flame.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
-            "Disabler",
             "Support",
-            "Carry"
+            "Disabler",
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1143,7 +1143,7 @@
             "projectileSpeed": 1000,
             "attackPoint": 0.65,
             "attackBackswing": 0.6,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1168,9 +1168,9 @@
         "released": "2010-11-01",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -1191,7 +1191,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.43,
             "attackBackswing": 0.74,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1218,8 +1218,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Pusher"
+            "Pusher",
+            "Support"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1240,7 +1240,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1264,11 +1264,11 @@
         "lore": "Slardar is a Slithereen, one of the Deep Ones, guardian of a vast network of sunken cities and the ancient riches buried within them. In the lightless gulf of the deepest ocean abysses, the Slithereen Guard patrols secret treasure rooms, ever vigilant against the subaqueous thieves sent into the deeps by covetous dryland sorcerers. He is utterly loyal, and his taciturn nature hides deep knowledge of the most secret places of the sea. He rises to the shallows in spite of the pain caused him by brightness, to commit reconnaissance, to make sure no one is conspiring against the depths, and sometimes in relentless pursuit of the rare few who manage to steal off with an item from the Sunken Treasury. Because he has spent his whole life at great pressure, under tremendous weight of the sea, Slardar the Slithereen Guard is a creature of immense power.",
         "released": "2011-01-18",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
-            "Durable",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 21,
@@ -1289,7 +1289,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.36,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1313,10 +1313,10 @@
         "lore": "The Tidehunter known as Leviathan was once the champion of the Sunken Isles, but his motives are as mysterious as those of his people. We all know the importance of the Drylanders' shipping lanes, how empires may rise and fall according to who controls the open water. Far less is known of the submarine lanes, and how the warring tribes of the Meranthic Diaspora have carved out habitations through endless undersea skirmishes. In the fragile treaties between the Mer and Men, we can glimpse the extent of the drowned empires, but their politics appear complex and opaque. It would seem that Leviathan tired of such petty strife, and set off on his own, loyal only to his abyssal god, Maelrawn the Tentacular. He stalks the shallows now in search of men or meranths who stray into his path, and with a particular loathing for Admiral Kunkka, who has long been his nemesis for reasons lost in the deepest trenches of the sea.",
         "released": "2010-11-01",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -1338,7 +1338,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.6,
             "attackBackswing": 0.56,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1362,9 +1362,9 @@
         "lore": "A wiry silhouette hitches forward\u2014uneven of feature and limb, bizarre of gait, relentlessly criss-crossing the battlefield in search of that vital weak point where his talents can do most good, and most harm. Whether broken or mismade it is not clear, but still, none can doubt the power carried in his twisted physique. A long staff thumps the earth as the Witch Doctor advances, deploying a terrifying arsenal of fetishes, hexes and spells. It is a body of magical knowledge learned over several lifetimes in the island highlands of Prefectura, now wielded with precise accuracy against his enemies. Witch Doctor is your best friend, or your worst enemy--healing allies and laying waste to all who oppose him.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1385,7 +1385,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.4,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1409,8 +1409,8 @@
         "lore": "In life, the frost-mage Ethreain (not yet a Lich) had used the threat of destructive ice to enslave entire kingdoms. His subjects, aided by a few desperate magicians, eventually grew bold enough to ambush him. Armed with enough charmed rope to bind him forever, they tied the frost mage to adamant weights and dropped him in a pool known chiefly for being bottomless. It wasn't.He only fell for a year or so before an outcrop snagged him. There he rested, dead but undecaying, until the geomancer Anhil thought to verify the legend of the supposedly bottomless Black Pool. Anhil's plumbline snarled with the ropes that bound the drowned magician, and up he hauled an unexpected prize. Thinking that by rendering the dead undead, he could question the Lich about the properties of the pool, he removed the bindings and commenced a simple rite of resurrection. Even the descendants of Ethreain's enemies were long forgotten by time, so there were none to warn Anhil against imprudence. But he learned the error of his judgment almost immediately, as Lich threw off the shackles and consumed him.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1431,7 +1431,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.46,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1478,7 +1478,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1525,7 +1525,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.4,
             "attackBackswing": 0.77,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1549,9 +1549,9 @@
         "lore": "Boush the Tinker's diminutive race is known for its intelligence, its cunning, and its prickly relationship with magic. As a matter of pride, they survive by their wits, and use only those powers of nature that may be unlocked through rational methodologies. Even this forbearance has led to a great deal of trouble, as Boush can attest. Once a key investigator of natural law, Boush the Tinker led a vast intellectual investigation into the workings of nature, founding a subterranean laboratory in the rumored, mist-wreathed wastes of the Violet Plateau. While scorning mages for the dangers they visit upon the world, Boush and his Tinker associates haughtily wrenched open a portal to some realm beyond comprehension and ushered in some nightmares of their own. A black mist rose from the cavernous interior of the Violet Plateau, shrouding it in permanent darkness from which sounds of horror perpetually emanate. Boush escaped with only his wits and the contraptions he carried, the sole Tinker to survive the Violet Plateau Incident.",
         "released": "2011-06-02",
         "roles": [
-            "Nuker",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -1572,7 +1572,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.35,
             "attackBackswing": 0.65,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1596,8 +1596,8 @@
         "lore": "Kardel Sharpeye was born deep in the mountains of Knollen where, since time immemorial, Keen Folk have survived by hunting the strange, cliff-dwelling steepstalkers above their village, shooting them from a distance and collecting the carcasses where they fell. Sharpeye was among the best of these strange mountain keens for whom projectile weapons are but another appendage, and to shoot is as natural as to touch.On his day of summoning, when he was to gain full standing in his village, Sharpeye took the ancient test: a single shot from the valley floor to strike a beast down from the cliffs. To miss was to be dishonored. With his entire village standing vigil, Sharpeye took his shot. A steepstalker fell; the crowd cheered. But when the carcass was collected, the village grew silent, for the elders found that the bullet had pierced its glittering central eye then fallen to be clenched in the steepstalker's mandibles. This ominous sign was the literal opening of a dark prophecy, foretelling both greatness and exile for the gunman who made such a shot. Sharpeye the Sniper was thus, by his own skill, condemned to make his way apart from his people\u2014and unwelcome back among them until he has fulfilled the remainder of the prophecy by attaining legendary stature on a field of battle.",
         "released": "2011-04-30",
         "roles": [
-            "Nuker",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -1618,7 +1618,7 @@
             "projectileSpeed": 3000,
             "attackPoint": 0.17,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 1400
@@ -1643,9 +1643,9 @@
         "released": "2010-11-01",
         "roles": [
             "Durable",
-            "Nuker",
             "Disabler",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -1666,7 +1666,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 0.47,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1691,8 +1691,8 @@
         "released": "2011-11-11",
         "roles": [
             "Initiator",
-            "Support",
-            "Disabler"
+            "Disabler",
+            "Support"
         ],
         "stats": {
             "baseStrength": 22,
@@ -1713,7 +1713,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1737,10 +1737,10 @@
         "lore": "Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five. Afterward Karroch was indentured to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely believed in. When the lad was seven, an explorer brought in a beast like none before seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, struck it with the Mad Scepter and ordered it dragged to the stocks.Over the coming months, the boy Karroch sneaked food and medicinal draughts to the wounded creature, but only managed to slow its deterioration. Wordlessly, the beast spoke to the boy, and over time their bond strengthened until the boy found he could hold up his end of a conversation. He could, in fact, speak now to all the creatures of the King's menagerie. On the night the beast died, a rage came over the boy. He incited the animals of the court to rebel and threw open their cages to set them amok on the palace grounds. The Last King was mauled in the mayhem. In the chaos, one regal stag bowed to the boy who had freed him; and with Beastmaster astride him, leapt the high walls of the estate, and escaped. Now a man, Karroch the Beastmaster has not lost his ability to converse with wild creatures. He has grown into a warrior at one with nature's savagery.",
         "released": "2011-05-20",
         "roles": [
+            "Durable",
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 25,
@@ -1753,15 +1753,15 @@
             "baseManaRegeneration": 0.0,
             "baseArmor": -1,
             "baseAttackSpeed": 100,
-            "baseMinAttack": 28,
-            "baseMaxAttack": 32,
-            "baseAvgAttack": 30,
+            "baseMinAttack": 25,
+            "baseMaxAttack": 29,
+            "baseAvgAttack": 27,
             "attackRange": 150,
             "bat": 1.7,
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1785,9 +1785,9 @@
         "lore": "The Ecclesiast-King of Elze nursed a desire for pain \u2014 forbidden pain. In a less prominent political figure, such desires might be considered unwise, but in a monarch of his stature, to satisfy such thirsts would have threatened the virtue of the Divine Throne itself. Therefore he turned to his dungeon full of demonologists, promising freedom to whoever could summon a personal succubus of torment and bind it entirely to his service. The creature who arrived, Akasha by name, visited upon him such exquisite torments that he named her his Secret Queen, and he began to spend all his spare moments submitting to her clever torments\u2014eventually abdicating all his responsibilities in his pursuit of the painful pleasures that only she could bring. Queen of Pain could bring him to the brink of death, but she was rune-bound to keep him alive. At last the King's neglect of state brought on an uprising. He was dragged from his chamber and hurled from the Tower of Invocations, and at the moment of death, Queen of Pain was let loose into the world, freed from servitude\u2014freed to visit her sufferings on anyone she deigned to notice.",
         "released": "2011-10-20",
         "roles": [
-            "Nuker",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1808,7 +1808,7 @@
             "projectileSpeed": 1500,
             "attackPoint": 0.56,
             "attackBackswing": 0.41,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1835,8 +1835,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Pusher"
+            "Pusher",
+            "Support"
         ],
         "stats": {
             "baseStrength": 19,
@@ -1857,7 +1857,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1881,11 +1881,11 @@
         "lore": "Darkterror the Faceless Void is a visitor from Claszureme, a realm outside of time. It remains a mystery why this being from another dimension believes the struggle for the Nemesis Stones is worth entering our physical plane, but apparently an upset in the balance of power in this world has repercussions in adjacent dimensions. Time means nothing to Darkterror, except as a way to thwart his foes and aid his allies. His long-view of the cosmos has given him a remote, disconnected quality, although in battle he is quite capable of making it personal.",
         "released": "2011-02-19",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
-            "Durable",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 20,
@@ -1906,7 +1906,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.56,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1930,11 +1930,11 @@
         "lore": "For untold years, King Ostarion built a kingdom from the remains of his enemies. It was an obsessive's errand, done to pass the long eternities of a monarchy that seemed fated never to end. He believed that as long as he built up the towers of his palace, he could not die. But eventually he learned that he had been deluded... that bone itself could perish. Deeply mistrustful of flesh, he sought a more permanent way of extending his reign, and at last settled on pursuit of wraith energy, a form of pure spirit given off by certain dark souls at death. Should he infuse himself with Wraith Essence, he thought he might create a body as luminous and eternal as his ego. On the millennial solstice known as Wraith-Night, he submitted to a rite of transformation, compelling his subjects to harvest enough souls to fuel his ambition for immortality. No one knows how many of his champions died, for the only survivor who mattered was the Wraith King who rose with the sun on the following morn. Now he rarely spends a moment on his glowing throne--but strides out with sword drawn, demanding a fealty that extends far beyond death.",
         "released": "2011-10-20",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
-            "Support",
-            "Durable",
-            "Carry"
+            "Carry",
+            "Support"
         ],
         "stats": {
             "baseStrength": 22,
@@ -1955,7 +1955,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.56,
             "attackBackswing": 0.44,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -1979,10 +1979,10 @@
         "lore": "Krobelus was a Death Prophet\u2014which is one way of saying she told fortunes for the wealthiest of those who wished to look beyond the veil. But after years of inquiring on behalf of others, she began to seek clues on her own fate. When death refused to yield its secrets, she tried to buy them with her life. But the ultimate price proved insufficient.Death disgorged her again and again, always holding back its deepest mysteries. Her jealousy grew. Others could die for eternity\u2014why not she? Why must she alone be cast back on the shores of life with such tiresome regularity? Why was she not worthy of the one thing all other living creatures took for granted? Still, she would not be discouraged.Each time she returned from the grave, she brought a bit of death back with her. Wraiths followed her like fragments of her shattered soul; her blood grew thin and ectoplasmic; the feasting creatures of twilight took her for their kin.. She gave a little of her life with every demise, and it began to seem as if her end was in sight. With her dedication to death redoubled, and no client other than herself, Krobelus threw herself ever more fervently into death's abyss, intent on fulfilling the one prophecy that eluded her: That someday the Death Prophet would return from death no more.",
         "released": "2011-12-08",
         "roles": [
-            "Nuker",
             "Disabler",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -2003,7 +2003,7 @@
             "projectileSpeed": 1000,
             "attackPoint": 0.5,
             "attackBackswing": 0.51,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2049,7 +2049,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2073,8 +2073,8 @@
         "lore": "In the realm of Pugna's birth, near the vents of the Nether Reaches, there stood a lamasery devoted to the Arts of Oblivion, which drew its power from the nether energies. The Grandmaster of the temple compound had himself passed into Oblivion several years prior, leaving his academy without a leader. From the moment of their master's death, the regents of the temple began rites of divination to identify their master's reincarnation, and eventually all signs converged on the immediate neighborhood. Several villages squatted in the shadow of the temple, their alleys and plazas full of the laughter of squalling children.Pugna, a mere thirteen months of age, was but one candidate among the local brats, and on the appointed day he was presented at the temple alongside two other promising tots. The lamas offered a jumble of worn relics to the children, treasured possessions of their former grandmaster. One boy reached for a porphyry wand that had belonged to the lama...and put it in his nostril. An impish girl pulled out an amulet that had also been the lama's, and immediately swallowed it. Pugna regarded the other two coolly, gave a merry laugh, and blasted them with gouts of emerald flame, reducing them to ashes in an instant. He then snatched up the wand and amulet, saying 'Mine!' The regents hoisted the beaming Pugna on their shoulders, wrapped him in their grandmaster's vestments, and rushed him to the throne before his mood could change. Within five years, the temple itself was another pile of ash, which pleased Pugna to no end.",
         "released": "2011-05-20",
         "roles": [
-            "Nuker",
-            "Pusher"
+            "Pusher",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -2095,7 +2095,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 330,
+            "movementSpeed": 330,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2141,7 +2141,7 @@
             "projectileSpeed": 1000,
             "attackPoint": 0.3,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2165,8 +2165,8 @@
         "lore": "The malevolent familiar of a sadistic wizard who captured and hoped to tame him, Viper was curiously glad to have been sprung from the sealed and unchanging subterranean Nether Reaches where his race had lived for millions of years, after tectonic slippage had sealed off the Netherdrakes in luminous caverns. Viper spent some time appearing to submit to the wizard's enchainments, hoping to learn what he could of the dark magics the mage practiced. But he soon realized that few spells were as deadly as the toxins that were his birthright. Exuding an acid that swiftly ate away the bars of his cage, the Netherdrake slipped free of his confines, spit poison in the old spellcaster's eyes, and soared out to let the world know that it had a new master.",
         "released": "2011-02-19",
         "roles": [
-            "Initiator",
             "Durable",
+            "Initiator",
             "Disabler",
             "Carry"
         ],
@@ -2189,7 +2189,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.33,
             "attackBackswing": 1.0,
-            "movementSpeedDaytime": 275,
+            "movementSpeed": 275,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2213,9 +2213,9 @@
         "lore": "How had she been reduced to this? She was once the Scourge of the Plains, a merciless leader of men and beasts, and able to sow terror wherever she dared. Now she was far from her homeland, driven half mad from starvation and months of wandering, her army long dead or worse. As she stood at the edge of an ancient forest, a pair of glowing eyes spied on from an elder branch. Something beautiful and deadly sought a meal in the wilting dusk. Without a sound, it turned and left. Fury overtook her. Clutching a rust-eaten dagger, she charged after the beast determined to reclaim even a shred of her past glory, but her quarry would not be caught. Three times she cornered the creature among the rocks and trees, and three times she pounced only to witness its fading shadow darting further into the woods. Yet the full moon shone brightly, and the creature's trail was easy to follow.Arriving in a clearing atop a high hill, the beast's massive feline form sat in the open, attentive and waiting. When the woman brandished her dagger, the creature reared and roared and charged. Death, it seemed, had come for her at long last in this strange place. She stood, calm and ready. A flash of movement, and the beast snatched the dagger from her hand before vanishing into the forest. Stillness. Hooded figures approached. In reverent tones they revealed that Selemene, Goddess of the Moon, had chosen her, had guided her, had tested her. Unwittingly she had endured the sacred rites of the Dark Moon, warriors of the Nightsilver Woods.She was offered a choice: join the Dark Moon and pledge herself to the service of Selemene, or leave and never return. She did not hesitate. Embracing her absolution, she renounced her bloody past, and took up a new mantle as Luna of the Dark Moon, the dreaded Moon Rider, ruthless and ever-loyal guardian of the Nightsilver Woods.",
         "released": "2012-06-28",
         "roles": [
-            "Nuker",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -2236,7 +2236,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.35,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2260,11 +2260,11 @@
         "lore": "After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs ground to nubs, and its fire-gouts no more threatening than a pack of wet matchsticks.Seeing no honor to be gained in dragon-murder, Knight Davion prepared to turn away and leave his old foe to die in peace. But a voice crept into his thoughts, and Slyrak gave a whispered plea that Davion might honor him with death in combat. Davion agreed, and found himself rewarded beyond expectation for his act of mercy: As he sank his blade in Slyrak's breast, the dragon pierced Davion's throat with a talon. As their blood mingled, Slyrak sent his power out along the Blood Route, sending all its strength and centuries of wisdom to the knight. The dragon's death sealed their bond and Dragon Knight was born. The ancient power slumbers in the Dragon Knight Davion, waking when he calls it. Or perhaps it is the Dragon that calls the Knight\u2026",
         "released": "2011-11-03",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
             "Pusher",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -2286,7 +2286,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2310,9 +2310,9 @@
         "lore": "Each young acolyte to the Dezun order must complete a series of rites before becoming a Shadow Priest. The final rite, the rite of shades, is a harrowing spiritual journey through the Nothl Realm, an unpredictable domain from which not all visitants return.  Of those who do, some return mad. Others return with strange aptitudes. But all who go there are changed by their experiences.Driven by the need for enlightenment, Dazzle was the youngest of his tribe ever to request the sacred ritual. At first the order refused him, saying he was too young. But Dazzle was not to be dissuaded. Sensing something special in the headstrong young acolyte, the elders relented. Dazzle drank down the sacred potion and sat by the fire while the rest of his tribe danced through the night.In this ethereal dimension of the Nothl Realm, the properties of light and dark are inverted. Thus his brilliant healing light, beautiful to our eye, is actually a sinister kind of evil; and the darkest deeds are done in a dazzling glow. The elders' intuition was prophetic: Dazzle returned to his people as a Shadow Priest like none seen before, with the power to heal as well as to destroy. Now he uses his gift to cut down his enemies and mend his friends.",
         "released": "2010-11-01",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -2333,7 +2333,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2357,10 +2357,10 @@
         "lore": "Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit. The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations. \"Your new trade is battle,\" his dying father told him as the village of their ancestors lay in charred and smoking ruins.It is a poor tradesman who blames his tools, and Rattletrap was never one to make excuses. After burying his father among the ruins of their village, he set about to transform himself into the greatest tool of warfare that any world had ever seen. He vowed to never again be caught unprepared, instead using his talents to assemble a suit of powered Clockwerk armor to make the knights of other lands look like tin cans by comparison. Now Rattletrap is alive with devices, a small but deadly warrior whose skills at ambush and destruction have risen to near-automated levels of efficiency. An artisan of death, his mechanizations make short work of the unwary, heralding a new dawn in this age of warfare. What time is it? It's Clockwerk time!",
         "released": "2011-04-20",
         "roles": [
+            "Durable",
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 26,
@@ -2381,7 +2381,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.33,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2407,9 +2407,9 @@
         "roles": [
             "Nuker",
             "Disabler",
-            "Support",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Support"
         ],
         "stats": {
             "baseStrength": 20,
@@ -2430,7 +2430,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.4,
             "attackBackswing": 0.6,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2454,10 +2454,10 @@
         "lore": "When Verodicia, Goddess of the Woods, had finished filling in the green places, having planted the coiled-up spirit in the seed, having lured the twining waters from deep within the rock, having sworn the sun its full attention to the growing things, she realized that her own time had reached its end, and like one of the leaves whose fate she had imprinted in the seed, she would fall without seeing the fruiting of her dream. It pained her to leave the world bereft, for the sprouts had not yet broken through the soil--and they would be tender and vulnerable to every sort of harm. She found in her seed pouch one last seed that she had missed in the sowing. She spoke a single word into the seed and swallowed it as she fell. Her vast body decomposed throughout the long winter, becoming the humus that would feed the seedlings in the spring. And on the morning of the vernal equinox, before the rest of the forest had begun to wake, that last seed ripened and burst in an instant. From it stepped Nature's Prophet, in full leaf, strong and wise, possessing Verodicia's power to foresee where he would be needed most in defense of the green places--and any who might be fortunate enough to call him an ally.",
         "released": "2011-04-20",
         "roles": [
-            "Nuker",
             "Pusher",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -2478,7 +2478,7 @@
             "projectileSpeed": 1125,
             "attackPoint": 0.4,
             "attackBackswing": 0.6,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2509,7 +2509,7 @@
         ],
         "stats": {
             "baseStrength": 25,
-            "baseAgility": 19,
+            "baseAgility": 15,
             "baseIntelligence": 15,
             "strengthGain": 2.4,
             "agilityGain": 1.9,
@@ -2526,7 +2526,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.39,
             "attackBackswing": 0.44,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2563,7 +2563,7 @@
             "intelligenceGain": 2.7,
             "baseHealthRegeneration": 1.0,
             "baseManaRegeneration": 0.0,
-            "baseArmor": 2,
+            "baseArmor": 1,
             "baseAttackSpeed": 100,
             "baseMinAttack": 33,
             "baseMaxAttack": 39,
@@ -2573,7 +2573,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.59,
             "attackBackswing": 0.58,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2620,7 +2620,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2644,9 +2644,9 @@
         "lore": "Purist Thunderwrath was a hard-fighting, road-worn, deeply committed knight, sworn to the order in which he had grown up as squire to elder knights of great reputation. He had spent his entire life in the service of the Omniscience, the All Seeing One. Theirs was a holy struggle, and so embedded was he in his duty that he never questioned it so long as he had the strength to fight and the impetuous valor that comes with youth. But over the long years of the crusade, as his elders passed away and were buried in sorry graves at the side of muddy tracks, as his bond-brothers fell in battle to uncouth creatures that refused to bow to the Omniscience, as his own squires were chewed away by ambush and plague and bad water, he began to question the meaning of his vows--the meaning of the whole crusade.After deep meditation, he parted ways with his army and commenced a long trek back to the cave-riddled cliffs of Emauracus, and there he set a challenge to the priests of the Omniscience. No knight had ever questioned them before, and they tried to throw him into the pit of sacrifice, but Purist would not be moved. For as he faced them down, he began to glow with a holy light, and they saw that the Omniscience had chosen to reveal Itself to him. The Elder Hierophant led him on a journey of weeks down into the deepest chamber, the holy of holies, where waited not some abstract concept of wisdom and insight, not some carved relic requiring an injection of imagination to believe in, but the old one itself. It had not merely dwelt in those rocks for billions of aeons; no, It had created them.The Omniscience had formed the immense mineral shell of the planet around itself, as a defense against the numerous terrors of space. Thus the All Seeing One claimed to have created the world, and given the other truths revealed to Purist on that day, the knight had no reason to refute the story. Perhaps the Omniscience is a liar, deep in its prison of stone, and not the world's creator at all, but Omniknight never again questioned his faith. His campaign had meaning at last. And there can be no question that the glorious powers that imbue him, and give his companions such strength in battle, are real beyond any doubt.",
         "released": "2011-11-03",
         "roles": [
-            "Nuker",
+            "Durable",
             "Support",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -2667,7 +2667,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.433,
             "attackBackswing": 0.567,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2691,10 +2691,10 @@
         "lore": "Aiushtha appears to be an innocent, carefree creature of the woods, and while this is certainly true, it is hardly the sum of her story. She well understands the suffering of the natural world. She has wandered far, and fared through forests bright and drear, in every clime and every season, gathering friends, sharing news, bringing laughter and healing wherever she goes. For in worlds wracked by war, forests are leveled for the building of ships and siege engines; and even in places of peace, the woods are stripped for the building of homes, and as fuel for countless hearths.Aiushtha hears the pleas of the small creatures, the furtive folk who need green shade and a leafy canopy to thrive. She lends her ears to those who have no other listeners. She carries their stories from the wood to the world, believing that her own good cheer is a kind of enchantment, that can itself fulfill the promise of a verdant future.",
         "released": "2011-05-26",
         "roles": [
-            "Support",
+            "Durable",
             "Disabler",
             "Pusher",
-            "Durable"
+            "Support"
         ],
         "stats": {
             "baseStrength": 17,
@@ -2715,7 +2715,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 320,
+            "movementSpeed": 320,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2739,8 +2739,8 @@
         "lore": "Emerging from the throes of the sacred Nothl Realm, Huskar opened his eyes to see the prodigal shadow priest Dazzle working a deep incantation over him. Against the ancient rites of the Dezun Order, Huskar's spirit had been saved from eternity, but like all who encounter the Nothl he found himself irrevocably changed. No longer at the mercy of a mortal body, his very lifeblood became a source of incredible power; every drop spilled was returned tenfold with a fierce, burning energy. However this newfound gift infuriated Huskar, for in his rescue from the Nothl, Dazzle had denied him a place among the gods. He had been denied his own holy sacrifice.In time the elders of the order sought to expand their influence and Huskar, they agreed, would be a formidable tool in their campaign. Yet becoming a mere weapon for the order that denied him his birthright only upset him further. As the first embers of war appeared on the horizon, he fled his ancestral home to find new allies, all the while seeking a cause worthy of unleashing the power his total sacrifice could bring.",
         "released": "2011-10-27",
         "roles": [
-            "Initiator",
             "Durable",
+            "Initiator",
             "Carry"
         ],
         "stats": {
@@ -2762,7 +2762,7 @@
             "projectileSpeed": 1400,
             "attackPoint": 0.3,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2786,10 +2786,10 @@
         "lore": "Of the Night Stalker, there is no history, only stories. There are ancient tales woven into the lore of every race and every culture, of an impossible time before sunlight and daytime, when night reigned alone and the world was covered with the creatures of darkness--creatures like Balanar the Night Stalker. It is said that on the dawn of the First Day, all the night creatures perished. All, that is, save one. Evil's embodiment, Night Stalker delights in his malevolence. He created the primal role of the Night Terror, the Boogeyman, and as long as there have been younglings, his is the specter summoned to terrify them. This is a role he relishes; nor are these empty theatrics. He does indeed stalk the unwary, the defenseless, those who have strayed beyond the lighted paths or denied the warnings of their communities. Night Stalker serves as living proof that every child's worst nightmare....is true.",
         "released": "2011-06-11",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -2811,7 +2811,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.55,
             "attackBackswing": 0.55,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 800,
             "visionRangeNighttime": 1800
@@ -2835,10 +2835,10 @@
         "lore": "For centuries, Black Arachnia the Broodmother lurked in the dark lava tubes beneath the smoldering caldera of Mount Pyrotheos, raising millions of spiderlings in safety before sending them to find prey in the wide world above. In a later age, the Vizier of Greed, Ptholopthales, erected his lodestone ziggurat on the slopes of the dead volcano, knowing that any looters who sought his magnetic wealth must survive the spider-haunted passages.After millennia of maternal peace, Black Arachnia found herself beset by a steady trickle of furfeet and cutpurses, bold knights and noble youths--all of them delicious, certainly, and yet tending to create a less than nurturing environment for her innocent offspring. Tiring of the intrusions, she paid a visit to Ptholopthales; and when he proved unwilling to discuss a compromise, she wrapped the Vizier in silk and set him aside to be the centerpiece of a special birthday feast.Unfortunately, the absence of the Magnetic Ziggurat's master merely emboldened a new generation of intruders. When one of her newborns was trodden underfoot by a clumsy adventurer, she reached the end of her silken rope. Broodmother headed for the surface, declaring her intent to rid the world of each and every possible invader, down to the last Hero if necessary, until she could ensure her nursery might once more be a safe and wholesome environment for her precious spiderspawn.",
         "released": "2011-10-20",
         "roles": [
-            "Nuker",
             "Pusher",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -2851,15 +2851,15 @@
             "baseManaRegeneration": 0.0,
             "baseArmor": -1,
             "baseAttackSpeed": 125,
-            "baseMinAttack": 29,
-            "baseMaxAttack": 35,
-            "baseAvgAttack": 32,
+            "baseMinAttack": 27,
+            "baseMaxAttack": 33,
+            "baseAvgAttack": 30,
             "attackRange": 175,
             "bat": 1.7,
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2883,8 +2883,8 @@
         "lore": "When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival. Others hear he was an orphan of war, taken in by the great Soruq the Hunter to learn the master's skill with a blade as they plumbed the dark forests for big game. Still others believe he was a lowly street urchin raised among a guild of cutpurses and thieves, trained in the arts of stealth and misdirection. Around campfires in the wild countryside his quarry speaks the rumors of Gondar's work, growing ever more fearful: they say it was he who tracked down the tyrant King Goff years after the mad regent went into hiding, delivering his head and scepter as proof. That it was he who infiltrated the rebel camps at Highseat, finally bringing the legendary thief White Cape to be judged for his crimes. And that it was he who ended the career of Soruq the Hunter, condemned as a criminal for killing the Prince's prized hellkite. The tales of Gondar's incredible skill stretch on, with each daring feat more unbelievable than the last, each target more elusive. For the right price, the hunted know, anyone can be found. For the right price, even the mightiest may find fear in the shadows.",
         "released": "2011-12-21",
         "roles": [
-            "Nuker",
-            "Escape"
+            "Escape",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -2905,7 +2905,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.59,
             "attackBackswing": 0.59,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 1000
@@ -2951,7 +2951,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.55,
             "attackBackswing": 0.36,
-            "movementSpeedDaytime": 275,
+            "movementSpeed": 275,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -2975,10 +2975,10 @@
         "lore": "Even among magical beasts, a twin-headed dragon is a freak. Equal parts ice and fire, cunning and rage, the creature known as Jakiro glides over charred and ice-bound battlefields, laying waste to any who would bear arms against it. Pyrexae dragon clutches always contain two fledglings. Famous for their viciousness even from the first moments of life, newly hatched dragons of this species will try to kill their sibling while still in the nest. Only the strongest survive. In this way is the strength of the Pyrexae line ensured. By some accident of nature, the freak Jakiro hatches from a single egg, combining in a single individual the full range of abilities found within the diverse Pyrexae species. Trapped within the armature of its monstrous body, the powers of ice and fire combine, and now no enemy is safe.",
         "released": "2011-10-27",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Pusher",
             "Support",
-            "Pusher"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 25,
@@ -2999,7 +2999,7 @@
             "projectileSpeed": 1100,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3046,7 +3046,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 330,
+            "movementSpeed": 330,
             "turnRate": 0.9,
             "visionRangeDaytime": 1600,
             "visionRangeNighttime": 800
@@ -3070,8 +3070,8 @@
         "lore": "Born in the godless Hazhadal Barrens, Chen came of age among the outlaw tribes who eked out an existence in the shimmering heat of the desert. Using an ancient form of animal enthrallment, Chen's people husbanded the hardy desert locuthi, a stunted species of burrowing dragon that melted desert sands into tubes of glass where twice-a-year rains collected. Always on the edge of starvation and thirst, fighting amongst their neighbors and each other, Chen's clan made the mistake, one fateful day, of ambushing the wrong caravan.In the vicious battle that followed, Chen's clan was outmatched. The armored Knights of the Fold made short work of the enthralled locuthi, who attacked and died in waves. With their dragons dead, the tribesmen followed. Chen struggled, and slashed, and clawed, and perished\u2014or would have. Defeated, on his knees, he faced his execution with humility, offering his neck to the blade. Moved by Chen's obvious courage, the executioner halted his sword. Instead of the blade, Chen was given a choice: death or conversion. Chen took to the faith with a ferocity. He joined the Fold and earned his armor one bloody conversion at a time. Now, with the fanaticism of a convert, and with his powers of animal enthrallment at their peak, he seeks out unbelievers and introduces them to their final reward.",
         "released": "2011-07-01",
         "roles": [
-            "Support",
-            "Pusher"
+            "Pusher",
+            "Support"
         ],
         "stats": {
             "baseStrength": 23,
@@ -3092,7 +3092,7 @@
             "projectileSpeed": 1100,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3139,7 +3139,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3163,16 +3163,16 @@
         "lore": "Kaldr, the Ancient Apparition, is an image projected from outside time. He springs from the cold, infinite void that both predates the universe and awaits its end. Kaldr is, Kaldr was, Kaldr shall be\u2026 and what we perceive, powerful as it appears to us, is but the faintest faded echo of the true, eternal Kaldr. Some believe that as the cosmos ages and approaches its final moments, the brightness and power of Kaldr will also intensify\u2014that the Ancient Apparition will grow younger and stronger as eternity's end draws nigh. His grip of ice will bring all matter to a stop, his image will cast a light too terrible to behold. An Apparition no longer!",
         "released": "2011-06-17",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
             "baseAgility": 20,
             "baseIntelligence": 23,
             "strengthGain": 1.9,
-            "agilityGain": 2.2,
+            "agilityGain": 2.0,
             "intelligenceGain": 3.1,
             "baseHealthRegeneration": 0.25,
             "baseManaRegeneration": 0.0,
@@ -3186,7 +3186,7 @@
             "projectileSpeed": 1250,
             "attackPoint": 0.45,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3210,10 +3210,10 @@
         "lore": "He that burns and is not consumed, devours and is never sated, kills and is beyond all judgment--Lucifer brings doom to all who would stand against him. Bearing away souls on the tip of a fiery sword, he is the Fallen One, a once-favored general from the realm behind the light, cast out for the sin of defiance: he would not kneel.Six times his name was tolled from the great bell of Vashundol. Six and sixty times his wings were branded, until only smoking stumps remained. Without wings, he slipped loose from the tethers that bound him within the light and he fell screaming to earth. A crater in the desert, Paradise lost.  Now he attacks without mercy, without motive, the only living being able to move freely between the seven dark dominions. Lashed by inescapable needs, twisted by unimaginable talents, Doom carries his own hell with him wherever he goes. Defiant to the last. Eventually, the world will belong to Doom.",
         "released": "2011-06-24",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -3235,7 +3235,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3282,7 +3282,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3306,11 +3306,11 @@
         "lore": "Barathrum the Spirit Breaker is a lordly and powerful being, a fierce and elemental intelligence which chose to plane-shift into the world of matter to take part in events with repercussions in the elemental realm that is his home. To that end, he assembled a form that would serve him well, both in our world and out of it. His physical form borrows from the strengths of this world, blending features both bovine and simian--horns, hooves and hands--as outward emblems of his inner qualities of strength, speed and cunning. He wears a ring in his nose, as a reminder that he serves a hidden master, and that this world in which he works is but a shadow of the real one.",
         "released": "2012-01-12",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
-            "Durable",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 28,
@@ -3331,7 +3331,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.6,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3355,9 +3355,9 @@
         "lore": "After serving through a lifetime of wars, upheaval, riots, and revolutions, the brass figured Aurel had seen enough. But in addition to a few trinkets and his considerable pension, the erstwhile engineer left with something far more interesting: a long-forgotten, incomplete schematic for a Gyrocopter, the world's first manned, non-magical flying device. Retiring to the tropical obscurity of the Ash Archipelago with little else but time and money, he set to work building the device.As the years wore on and the remains of failed prototypes began to pile up, he began to wonder if mechanical flight was even possible. A decade and a day after his retirement, on a sunny afternoon with a southerly breeze, Aurel sat in his latest attempt bristling with indignation and expectant failure. With a grunt of effort he pulled the ignition cord and covered his head, waiting for the inevitable explosion. However to his great surprise he began to lift and, following a few panicked adjustments, stabilize. Within an hour, he was ducking and weaving with the breeze, level with the gulls, and Aurel found himself filled with the breathless wonder of flight.As dusk settled in he set a course back to his workshop, but no sooner had he turned his craft when a cannonball tore through his tailfin. Disentangling himself from the wreckage, he swam toward the nearest piece of land in sight, and cursed to see the ship responsible for the cannonball collecting the debris. Days later, when Aurel returned to his workshop, he set to work on yet another gyrocopter, this one capable of carrying a much heavier, more dangerous payload.",
         "released": "2012-06-11",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -3378,7 +3378,7 @@
             "projectileSpeed": 3000,
             "attackPoint": 0.2,
             "attackBackswing": 0.1,
-            "movementSpeedDaytime": 320,
+            "movementSpeed": 320,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3402,12 +3402,12 @@
         "lore": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy.In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research.When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike.They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit.  In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.",
         "released": "2011-11-18",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Durable",
-            "Carry"
+            "Carry",
+            "Support"
         ],
         "stats": {
             "baseStrength": 23,
@@ -3428,7 +3428,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 0.65,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3455,8 +3455,8 @@
             "Nuker",
             "Disabler",
             "Pusher",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 19,
@@ -3477,7 +3477,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.4,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3504,8 +3504,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Carry"
+            "Carry",
+            "Support"
         ],
         "stats": {
             "baseStrength": 19,
@@ -3526,7 +3526,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3550,9 +3550,9 @@
         "lore": "One of a lordly and magisterial race, Harbinger prowls the edge of the Void, sole surviving sentry of an outpost on the world at the rim of the abyss. From this jagged crystalline Outworld, forever on guard, he has gazed for eternities into the heavens, alert for any stirring in the bottomless night beyond the stars. Imprinted deep in the shining lattices of his intellect lies a resonant pattern akin to prophecy, a dark music implying that eventually some evil will wake out there, beyond the edges of creation, and turn its attention to our world. With his whole being focused on his vigil, Outworld Destroyer paid little attention to events closer in to the sun. But at last the clamor of the Ancients, and a sense of growing threat from within as well as without, sent him winging sunward to visit the plains of war. Harbinger's place in our own prophecies is unambiguous: he must be considered an omen of worse things to come. But his arrival in itself is bad enough.",
         "released": "2012-02-16",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -3573,7 +3573,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.46,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3621,7 +3621,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.55,
             "attackBackswing": 0.25,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3645,10 +3645,10 @@
         "lore": "Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie, communing with the spirit realm in grand festivals of drink. Born to a mother's flesh by a Celestial father, the youth known as Mangix was the first to grow up with the talents of both lineages. He trained with the greatest aesthetes of the Order, eventually earning, through diligent drunkenness, the right to challenge for the title of Brewmaster, that appellation most honored among the contemplative malt-brewing sect.As much drinking competition as mortal combat, Mangix for nine days drank and fought the elder master. For nine nights they stumbled and whirled, chugged and struck, until at last the elder warrior collapsed into a drunken stupor, and a new Brewmaster was named. Now the new, young Brewmaster calls upon the strength of his Oyo forebears to speed his staff. When using magic, it is to his spirit ancestors that he turns. Like all Brewmasters before him, he was sent out from his people with a single mission. He wanders the land, striving toward enlightenment through drink, searching for the answer to the ancient spiritual schism. Hoping to think the single thought that will unite the spirit and physical planes again.",
         "released": "2012-04-19",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -3670,7 +3670,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 0.65,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3695,9 +3695,9 @@
         "released": "2012-03-15",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 23,
@@ -3718,7 +3718,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.35,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3765,7 +3765,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.33,
             "attackBackswing": 0.53,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3789,10 +3789,10 @@
         "lore": "The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression. Of all the ancient Fundamentals, he is the oldest and most tireless, endlessly searching out a being he knows only as \"The Light.\" Long ago the Light ventured out from the progenitor realm, in defiance of the first covenant. Now Chaos Knight shifts from plane to plane, always on the hunt to extinguish the Light wherever he finds it. A thousand times he has snuffed out the source, and always he slides into another plane to continue his search anew.Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, drawing strength from the disorder of the universe. A physical manifestation of chaos itself, in times of need he calls upon other versions of himself from other planes, and together these dark horsemen ride into battle, as unstoppable as any force of nature. Only when the last Light of the world is scoured from existence will the search be ended. Where rides the Chaos Knight, death soon follows.",
         "released": "2012-06-11",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
             "Pusher",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -3814,7 +3814,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3841,9 +3841,9 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Pusher",
+            "Escape",
             "Carry",
-            "Escape"
+            "Pusher"
         ],
         "stats": {
             "baseStrength": 24,
@@ -3864,7 +3864,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.38,
             "attackBackswing": 0.6,
-            "movementSpeedDaytime": 320,
+            "movementSpeed": 320,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3888,11 +3888,11 @@
         "lore": "Far to the west, in the mountains beyond the Vale of Augury, lie the remains of an ancient power, a fount of eldritch energy nestled deep in the high woods. It is said that the things that grow here, grow strangely. To the forces of nature this is a sacred place, made to stay hidden and unknown. Many are the traps and dangers of this land. There are all-consuming grasses, crossbred fauna and poisonous flowers, but none are so fierce as the mighty Treant Protectors.These ageless, titanic beings, charged with keeping the peace in this dangerous land, ensure that none within encroach without reason, and none without poach their secrets. For time untold they tended to their holy ground, uninterrupted, only dimly aware of the changing world beyond. Yet inevitably the wider world grew aware of this untamed land, and with each passing winter the outsiders grew bolder. Soon they arrived with tools to cut and with flames to burn, and often the Treants would ponder: who are these fragile, industrious creatures? What now had become of the wild, green world? There came and went an age of questions and of doubts, a thousand summers of long traditions set to scrutiny, while more and more the outsiders died and fed their earth.When all that bloomed had finally finished their say, curiosity had overcome caution. It was decided: a lone protector would be sent into the wider world, and instructed to wander until the glaciers arose once more, to observe the changing land and its creatures, and to discover what unknown dangers could threaten their sacred ground.",
         "released": "2012-05-17",
         "roles": [
+            "Durable",
             "Initiator",
             "Disabler",
-            "Support",
-            "Durable",
-            "Escape"
+            "Escape",
+            "Support"
         ],
         "stats": {
             "baseStrength": 25,
@@ -3913,7 +3913,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.6,
             "attackBackswing": 0.4,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3937,11 +3937,11 @@
         "lore": "The ordinary ogre is the creature for whom the phrase 'As dumb as a bag of rock hammers' was coined. In his natural state, an ogre is supremely incapable of doing or deciding anything. Clothed in dirt, he sometimes finds himself accidentally draped in animal skins after eating lanekill. Not an especially social creature, he is most often found affectionately consorting with the boulders or tree-stumps he has mistaken for kin (a factor that may explain the ogre's low rate of reproduction). However, once every generation or so, the ogre race is blessed with the birth of a two-headed Ogre Magi, who is immediately given the traditional name of Aggron Stonebreak, the name of the first and perhaps only wise ogre in their line's history.With two heads, Ogre Magi finds it possible to function at a level most other creatures manage with one. And while the Ogre Magi will win no debates (even with itself), it is graced with a divine quality known as Dumb Luck\u2014a propensity for serendipitous strokes of fortune which have allowed the ogre race to flourish in spite of enemies, harsh weather, and an inability to feed itself. It's as if the Goddess of Luck, filled with pity for the sadly inept species, has taken Ogre Magi under her wing. And who could blame her? Poor things.",
         "released": "2012-05-24",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Durable"
+            "Support"
         ],
         "stats": {
             "baseStrength": 23,
@@ -3962,7 +3962,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -3986,10 +3986,10 @@
         "lore": "How long has it been since he lost his name? The torn ruin of his mind no longer knows.Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness. In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. They turned on each other with split fingernails and shattered teeth. Then it came: distant at first, a fragile note at the edge of perception, joined by another, then another, inescapable and unending. The chorus grew into a living wall of sound pulsing in his mind until no other thought survived. With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. Yet destruction was not what he'd been chosen for. The Dead God demanded war. In the belly of the great nothing, he was granted a new purpose: to spread the Dirge across the land, to rally the sleepless dead against the living. He was to become the Undying, the herald of the Dead God, to rise and fall and rise again whenever his body failed him. To trudge on through death unending, that the Dirge might never end.",
         "released": "2012-07-05",
         "roles": [
-            "Nuker",
+            "Durable",
             "Disabler",
             "Support",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -4010,7 +4010,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4034,9 +4034,9 @@
         "lore": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. Yet as with any sorcerer's circle, a sense of community has never guaranteed competitive courtesy.Already a renowned duelist and scholar of the grander world of sorcery, it had never occurred to Rubick that he might perhaps be Magus material until he was in the midst of his seventh assassination attempt. As he casually tossed the twelfth of a string of would-be killers from a high balcony, it dawned on him how utterly unimaginative the attempts on his life had become. Where once the interruption of a fingersnap or firehand might have put a cheerful spring in his step, it had all become so very predictable. He craved greater competition. Therefore, donning his combat mask, he did what any wizard seeking to ascend the ranks would do: he announced his intention to kill a Magus.Rubick quickly discovered that to threaten one Magus is to threaten them all, and they fell upon him in force. Each antagonist's spell was an unstoppable torrent of energy, and every attack a calculated killing blow. But very soon something occurred that Rubick's foes found unexpected: their arts appeared to turn against them. Inside the magic maelstrom, Rubick chuckled, subtly reading and replicating the powers of one in order to cast it against another, sowing chaos among those who had allied against him. Accusations of betrayal began to fly, and soon the sorcerers turned one upon another without suspecting who was behind their undoing.When the battle finally drew to a close, all were singed and frozen, soaked and cut and pierced. More than one lay dead by an ally's craft. Rubick stood apart, sore but delighted in the week's festivities. None had the strength to argue when he presented his petition of assumption to the Hidden Council, and the Insubstantial Eleven agreed as one to grant him the title of Grand Magus.",
         "released": "2012-06-20",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -4057,7 +4057,7 @@
             "projectileSpeed": 1125,
             "attackPoint": 0.4,
             "attackBackswing": 0.77,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4082,9 +4082,9 @@
         "released": "2012-07-05",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -4105,7 +4105,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.4,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4130,9 +4130,9 @@
         "released": "2012-07-26",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Escape"
+            "Escape",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 17,
@@ -4153,7 +4153,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.46,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4179,10 +4179,10 @@
         "roles": [
             "Initiator",
             "Disabler",
-            "Support",
-            "Pusher",
+            "Escape",
             "Carry",
-            "Escape"
+            "Pusher",
+            "Support"
         ],
         "stats": {
             "baseStrength": 21,
@@ -4203,7 +4203,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 330,
+            "movementSpeed": 330,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4227,9 +4227,9 @@
         "lore": "Upon a pale horse he rides, this spark of endless suns, this Keeper of the Light. Ezalor long ago escaped the Fundamental Plane, separating from the other ancient forces to which he was bound within the great Primordial harmony. He is a power grown sentient in the dawn of the universe, and now rides forth in all planes at once, one step ahead of pursuing chaos, bearing his gift with him at the end of a radiant staff. His majestic truth lies hidden beneath the outward appearance of a slightly doddering old man who barely stays in the saddle. However, when faced with the challenge of chaos, or the forces of darkness, his primordial light bursts forth, and his full power is revealed, transforming him once again into a force to be reckoned with.",
         "released": "2012-07-26",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -4250,7 +4250,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.85,
-            "movementSpeedDaytime": 320,
+            "movementSpeed": 320,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4274,9 +4274,9 @@
         "lore": "Io is everywhere, and in all things. Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, this strange Wisp of life-force occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment.Like the great twin riders Dark and Light, and yet another ancient traveler whose true history is lost to the ages, Io the Wisp is a Fundamental of the universe, a force older than time, a wanderer from realms far beyond mortal understanding. Io is nothing less than the sum of all attractive and repulsive forces within the material field, a sentient manifestation of the charge that bind existence together. It is only in the controlled warping of these electrical waylines that Io's presence can be experienced on the physical plane. A benevolent, cooperative force, Io bonds its strange magnetism to others so that the power of allies might be enhanced. Its motives inscrutable, its strength unimaginable, Io moves through the physical plane, the perfect expression of the mysteries of the universe.",
         "released": "2012-06-28",
         "roles": [
-            "Nuker",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 17,
@@ -4297,7 +4297,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 0.4,
-            "movementSpeedDaytime": 320,
+            "movementSpeed": 320,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4321,11 +4321,11 @@
         "lore": "Perched atop the entrance to the Narrow Maze sit the looming shapes of sneering gargoyles, the paths into the hereafter forever in their gaze. Beasts and birds, men and monsters, all creatures that die and choose to travel beyond must someday pass beneath their sight. For an untethered spirit, the decision to journey through the veil of death is irrevocable. When chance comes, and by craft or cunning some restless soul escapes their hells and heavens, it is the dreaded gargoyle Visage, the bound form of the eternal spirit Necro\u2019lic, who is dispatched to reclaim them. Ruthless and efficient, unhindered by the principles of death and fatigue, Visage stalks its prey without mercy or end, willingly destroying all which may give shelter to the fugitive essence. That which flaunts the laws of the afterlife may never rest, for while it is true that the dead may be revived, it is only a matter of time before Visage finds and returns them to their proper place.",
         "released": "2012-07-26",
         "roles": [
+            "Durable",
             "Nuker",
             "Disabler",
-            "Support",
             "Pusher",
-            "Durable"
+            "Support"
         ],
         "stats": {
             "baseStrength": 22,
@@ -4346,7 +4346,7 @@
             "projectileSpeed": 1400,
             "attackPoint": 0.4,
             "attackBackswing": 0.54,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4370,10 +4370,10 @@
         "lore": "Little known to the inhabitants of the dry world, Dark Reef is a sunken prison where the worst of the sea-breed are sent for crimes against their fellows. It is a razor barbed warren full of murderous slithereen, treacherous Deep Ones, and sociopathic meranths. In this dim labyrinth, patrolled by eels and guarded by enormous anemones, only the vicious survive. Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one, surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself. When the infamous Dark Reef Dozen plotted their ill-fated breakout, they kept their plans a perfect secret, murdering anyone who could have put the pieces together--but somehow Slark discovered their scheme and made a place for himself in it. Ten of the Dozen died in the escape attempt, and two were captured, hauled back to Dark Reef, then executed for the entertainment of their fellow inmates. But Slark, the unsung thirteenth, used the commotion as cover and slipped away, never to be caught. Now a furtive resident of the carnivorous mangrove scrub that grips the southern reach of Shadeshore, Slark remains the only successful escapee from Dark Reef.",
         "released": "2012-11-15",
         "roles": [
-            "Nuker",
             "Disabler",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -4394,7 +4394,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 1800
@@ -4441,7 +4441,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.5,
             "attackBackswing": 0.6,
-            "movementSpeedDaytime": 275,
+            "movementSpeed": 275,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4489,7 +4489,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4513,10 +4513,10 @@
         "lore": "It's said that a centaur's road is paved with the corpses of the fallen. For the one called Warrunner, it has been a long road indeed. To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures. Their language has no written form; their culture lacks pictographic traditions, structured music, formalized religion. For centaurs, combat is the perfect articulation of thought, the highest expression of self. If killing is an art among centaurs, then Bradwarden the Warrunner is their greatest artist. He rose to dominance on the proving grounds of Omexe, an ancient arena where centaur clans have for millennia gathered to perform their gladiatorial rites. As his fame spread, spectators came from far and wide to see the great centaur in action. Always the first to step into the arena, and the last to leave, he composes a masterpiece in each guttering spray, each thrust of blood-slickened blade-length. It is the poetry of blood on steel, flung in complex patterns across the pale sands of the killing floor.Warrunner defeated warrior after warrior, until the arena boomed with the cheering of his name, and he found himself alone, the uncontested champion of his kind. The great belt of Omexe was bestowed, wrapped around his broad torso, but in his victory, the death-artist found only emptiness. For what is a warrior without a challenge? The great centaur galloped out of Omexe that day with a new goal. To his people, Warrunner is the greatest warrior to ever step into the arena. Now he has set out to prove he is the greatest fighter who has ever lived.",
         "released": "2012-10-25",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Escape"
         ],
         "stats": {
@@ -4538,7 +4538,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4563,9 +4563,9 @@
         "released": "2012-10-04",
         "roles": [
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Escape"
+            "Escape",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 25,
@@ -4586,7 +4586,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.5,
             "attackBackswing": 0.84,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4611,8 +4611,8 @@
         "released": "2012-12-13",
         "roles": [
             "Durable",
-            "Nuker",
-            "Escape"
+            "Escape",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 26,
@@ -4633,7 +4633,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.36,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4657,10 +4657,10 @@
         "lore": "Never one to turn his back on a fight, Rigwarl was known for battling the biggest, meanest scrappers he could get his hands on. Christened Bristleback by the drunken crowds, he waded into backroom brawls in every road tavern between Slom and Elze, until his exploits finally caught the eye of a barkeep in need of an enforcer. For a bit of brew, Bristleback was hired to collect tabs, keep the peace, and break the occasional leg or two (or five, in the case of one unfortunate web-hund).After indulging in a night of merriment during which bodily harm was meted out in equal parts upon both delinquent patrons and his own liver, Bristleback finally met his match. \"Your tusks offend me, sir,\" he was heard to drunkenly slur to one particularly large fellow from the northern wastes whose bill had come due. What followed was a fight for the ages. A dozen fighters jumped in. No stool was left unbroken, and in the end, the impossible happened: the tab went unpaid. Over the weeks that followed, Bristleback's wounds healed, and his quills grew back; but an enforcer's honor can be a prickly thing. He paid the tab from his own coin, vowing to track down this northerner and extract redemption. And then he did something he'd never done before: he actually trained, and in so doing made a startling discovery about himself. A smile peeled back from his teeth as he flexed his quills. Turning his back to a fight might be just the thing.",
         "released": "2013-03-28",
         "roles": [
-            "Initiator",
             "Durable",
-            "Nuker",
-            "Carry"
+            "Initiator",
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -4681,7 +4681,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4706,8 +4706,8 @@
         "released": "2013-02-14",
         "roles": [
             "Initiator",
-            "Nuker",
-            "Disabler"
+            "Disabler",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 23,
@@ -4728,7 +4728,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.36,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4752,9 +4752,9 @@
         "lore": "A highly placed mage in the court of the Ghastly Eyrie, Dragonus lives a troubled existence. Sworn by birth to protect whoever sits within the Nest of Thorns, he hates the current Skywrath queen with all his soul. As a youth, high-born, he was a friend and companion to the eldest Skywrath princess, Shendelzare, first in line for the Nest. He had loved her warmly and unshakably, but as his studies took hold, his mind turned to arcane learning and the mastery of Skywrath sorcery.Obsessed with matters aetherial, he missed the mundane signs of courtly treachery that hinted at a plot against Shendelzare, and lost his chance to foil it. When the court was shaken by a swift and violent coup, he emerged from his studies to discover his oldest and dearest friend had been lost to him. The Nest of Thorns now belonged to Shendelzare's ruthless younger sister, and Dragonus could do nothing. The magic of the Skywrath Mage serves only the sworn protector of the Skywrath scion, so to act against the Nest would render him helpless. He clings to his post, believing it to be the best hope of one day restoring his true love to her rightful place. Meanwhile, his secret is known only to the goddess Scree'auk, whose magic it was transformed Shendelzare from a crippled physical creature into an embodiment of pure vengeful energy.While he dreams of restoring his beloved queen to the Ghastly Eyrie, he dreams even more desperately of restoring Shendelzare herself to a fully healed physical form. The duplicity of his role at court tortures him, for he is a noble and good-hearted creature; but the worst torture of all is imagining the hatred that Vengeful Spirit must hold in her heart for him.",
         "released": "2013-04-19",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -4775,7 +4775,7 @@
             "projectileSpeed": 1000,
             "attackPoint": 0.4,
             "attackBackswing": 0.78,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4811,7 +4811,7 @@
             "agilityGain": 1.5,
             "intelligenceGain": 2.0,
             "baseHealthRegeneration": 1.0,
-            "baseManaRegeneration": 0.25,
+            "baseManaRegeneration": 0.0,
             "baseArmor": 0,
             "baseAttackSpeed": 95,
             "baseMinAttack": 22,
@@ -4822,7 +4822,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.56,
             "attackBackswing": 0.41,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4846,10 +4846,10 @@
         "lore": "Well may you ask, \"How did this world take its form?\" Why of all the worlds in creation, has this one its strange properties, its diverse and motley collection of creatures, cultures and lore? \"The answer,\" One whispers, \"lies with the Titans.\"These original progenitors were there near the Beginning\u2014if not actual witnesses to the creation, then born with it still echoing in their ears. Stamped with the earliest energies of the universe, they wished nothing more than to continue as creators themselves. Thus they bent to the task of shaping matter to their will: hammering and heating, bending and blasting. And when matter proved less challenging than they liked, they turned their tools upon themselves, reshaping their minds and reforging their spirits until they had become beings of great endurance. Reality itself became the ultimate object of their smithing. Yet, along the way, they sometimes erred. In cases of great ambition, mistakes are unavoidable.The one we know as the Elder Titan was a great innovator, one who studied at the forge of creation. In honing his skills, he shattered something that could never be repaired, only thrown aside. He fell into his own broken world, a shattered soul himself. There he dwelt among the jagged shards and fissured planes, along with other lost fragments that had sifted down through the cracks in the early universe. And this is why the world we know resembles an isle of castaways, survivors of a wreck now long forgotten. Forgotten, that is, by all but the One who blames himself. He spends his time forever seeking a way to accomplish the repairs, that he might rejoin the parts of his broken soul, that we and the world alike might all be mended. This is the One we know as Elder Titan.",
         "released": "2013-05-02",
         "roles": [
+            "Durable",
             "Initiator",
-            "Nuker",
             "Disabler",
-            "Durable"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 26,
@@ -4870,7 +4870,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 0.97,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4894,10 +4894,10 @@
         "lore": "They came without warning. Within the city walls of Stonehall there came a rumble and a terrible sound, and from blackness unknown came a force of beasts numbering beyond count, wielding flame and foul sorcery, slaying and snatching mothers and sons to dark purpose. Of once-mighty Stonehall's military strength only the Bronze Legion, led by the indomitable Commander Tresdin, was near enough to answer the call of battle. They rode into their city, fighting through bloodstained alleyways and burning markets, cutting their way through the monstrous throng to the source of the sudden invasion: an ethereal rift within the city square, and at its precipice thundered their dreaded champion.Enwrapped in a corrosive shimmer, the leader of the abyssal horde swung its massive blade, cleaving a legionnaire in two as his flesh began to spoil. Tresdin lifted her blood-stained sword and settled her sights on the beast. It turned, smiling at her through a maze of teeth. Heedless of the battle raging around them, they charged one another.Deflecting blow after blow, the pair danced their deadly duel as the Bronze Legion met its end around them. Tresdin leapt forward as her foe swung its sword to meet her. The odds turned. The attack smashed into Tresdin suddenly, a brutal thrust from the side, but even as her balance slipped she rallied her strength for another stroke. Blade scraped on blade, beyond the hilt to the gnarled paw below, carving it in two in a fearsome spray of sparks and blood. The vile audience looked on in astonishment as she pressed the attack, driving her blade through her foe's flesh into the stampeding heart within. With a scream that split the clouds above, the beast erupted in a torrent of gore and anguish. The stygian portal wavered, the power sustaining the chasm beyond vanishing as suddenly as it had appeared. The remaining invaders fell quickly to Stonehall steel.Though victorious, the survivors saw little to celebrate: the city lay in ruins, and survivors were few. Fires continued to spread. Unfurling her banners of war, Tresdin gathered what allies she could. Her anger smoldered as she pledged brutal vengeance upon the forces of the abyss, and damned be any who would dare stand in her way.",
         "released": "2013-12-12",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Carry"
         ],
         "stats": {
@@ -4919,7 +4919,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.46,
             "attackBackswing": 0.64,
-            "movementSpeedDaytime": 325,
+            "movementSpeed": 325,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4943,8 +4943,8 @@
         "lore": "In the storied saga of Dredger's Bight, no business has ever been more reviled than Techies Demolitions. Then again, Dredger's Bight no longer exists. Nor does Toterin. Or even Trapper Town. In fact, if one were to track the history of Techies Demolitions they might notice that shortly after Techies appear, towns tend to disappear.Like every inevitable disaster surrounding Techies, the obliteration of Dredger's Bight began with an invention. Tasked with designing a safer way of detonating explosives in the mines beneath the city, pyrotechnic prodigies Squee, Spleen, and Spoon developed their most outlandish creation yet: a button which, when pressed, would trigger a distant device to spark a fuse.Overeager to test their invention, the trio stuffed barrel after barrel with flamesalt explosives, piling every corner of their tiny workshop high with the newly developed remote bombs. From this stockpile they plucked a single payload, burying it in a far away field. As they cowered in a ditch, Spleen pressed the detonator button. Yet after a moment, nothing happened. Confused, he stood up, pressing his button again and again until, finally, an explosion tore a hole in the field. Elated, Squee and Spleen turned toward home just as a massive wave of sound and force arrived to knock them over.Bewildered, their ears ringing from the unexpected blast, they gathered in the dingy miasma to see a smoking ruin where their workshop once stood. Chunks of wood and stone continued to fall as the yawning crater before them slowly deepened into an expanding pit. The whole of Dredger's Bight shuddered, and then gradually started to slide into the mines below as its panicked residents fled.Sitting at the edge of their sinking home they grinned and giggled, as giddy at the possibilities as they were oblivious to the scorn of their former neighbors. They wondered only one thing: how could they trigger an even bigger blast?",
         "released": "2014-09-04",
         "roles": [
-            "Nuker",
-            "Disabler"
+            "Disabler",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -4965,7 +4965,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.5,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -4992,14 +4992,14 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 22,
             "baseAgility": 22,
             "baseIntelligence": 20,
-            "strengthGain": 2.6,
+            "strengthGain": 2.3,
             "agilityGain": 3.2,
             "intelligenceGain": 2.2,
             "baseHealthRegeneration": 0.5,
@@ -5014,7 +5014,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 0.3,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5038,10 +5038,10 @@
         "lore": "Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland miners. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong\u2014a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth.What the craftsmen had not known was that within the strange seam of jade flowed the spirit of the Earth itself\u2014an elemental force at one with the planet. When the force within the carved jade found itself cut off from the life's blood of the world, it gathered its strength over the course of a thousand years and dug itself free and into the light. Now the great Kaolin Earth Spirit strides the Upland roads, fighting for the spirit of the Earth; and in times of need calls forth remnants of his buried army still locked in the loving embrace of the soil.",
         "released": "2013-11-14",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
             "Escape"
         ],
         "stats": {
@@ -5063,7 +5063,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 0.65,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5087,11 +5087,11 @@
         "lore": "Neither myth nor song exist to tell of their coming. Deep below the surface of the world lay unknown wonders and horrors. Down and down again, well beneath the slithering magma fields and simmering roots of dormant volcanoes stands the obsidian city of Aziyog, its incomparable stonework spanning an endless cavern. Within honeycomb walls mortared with the bones of countless slaves lies the domain of the Abyssal Horde, and their brutal underlord Vrogros.  Armed by the monstrous forgemasters of his kind and well-practiced in the arts of the Dark Rift, Vrogros is able to conjure forth flame and crippling malice through the twist between worlds. He seeks always to expand his holdings, destroying or enslaving all he encounters. Yet the lands offered by the subterranean realm are few, and so his sights have turned upward. By his command the first waves of abyssal invaders have already marched through the rift, a few doomed legions meant merely to test the might of nations above. Now, as his full force readies itself for unending conquest, Vrogros himself steps into a sunlit world to announce his coming reign. Those who face the Underlord will bow and pay tribute, or be crushed where they stand.",
         "released": "2016-08-23",
         "roles": [
+            "Durable",
             "Nuker",
             "Disabler",
-            "Support",
-            "Durable",
-            "Escape"
+            "Escape",
+            "Support"
         ],
         "stats": {
             "baseStrength": 25,
@@ -5112,7 +5112,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.45,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5136,9 +5136,9 @@
         "lore": "Terrorblade is the Demon Marauder\u2014an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven infernal regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own.But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of his own reflected worst self\u2014a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation.",
         "released": "2014-01-29",
         "roles": [
-            "Nuker",
             "Pusher",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 18,
@@ -5159,7 +5159,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.8,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5186,8 +5186,8 @@
             "Initiator",
             "Nuker",
             "Disabler",
-            "Support",
-            "Escape"
+            "Escape",
+            "Support"
         ],
         "stats": {
             "baseStrength": 23,
@@ -5208,7 +5208,7 @@
             "projectileSpeed": 1100,
             "attackPoint": 0.35,
             "attackBackswing": 0.633,
-            "movementSpeedDaytime": 280,
+            "movementSpeed": 280,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5232,10 +5232,10 @@
         "lore": "Ascendants to the Great Seat of Cymurri had for ages imported their Oracles exclusively from the Ivory Incubarium, high in the hollow peaks of the Zealot's Range, with a downpayment made at the time of the embryo's conception and the balance surrendered on delivery of a mature, well-trained prophet to the Gate of the Graven King.Raised by same Pallid Sybils who bred and birthed them, all sanctioned Oracles were anchored by their physical form to the world we most of us share; meanwhile, their souls roamed far afield, barely bound by the airiest astral umbilicus. From such cosmic roamings the prophets would return, speaking words of fire with tongues of flesh. Their mystic utterances were analyzed by the Cymurri Advisors, who found in them visions of the future, diplomatic advice, all the supernatural ammunition the line of Graven Kings needed to secure victory in every campaign, whether in the court or on the battlefield. Thus it went for generations, the Graventome's pages filling with the names of triumphant kings and the new domains they had acquired. So it went, that is, until the particular Oracle named Nerif arrived to serve the very last of the stone-helmed kings.From the first, Nerif's prophecies were unusual. They seemed not merely to portend the future, but to shape it. The weird soothsayer croaked out advice no one had requested, and suddenly the Cymurri found themselves immersed in conflicts with newfound enemies. The Advisors, sensing a threat to their power, were quick to pin these unwelcome developments on the latest Oracle. They demanded his removal, petitioning the Sybils to reclaim their defective prophet and replace him with a worthy substitute. But Nerif described an ominous dream of the Incubarium's destruction, and within hours came news of the ancient school's destruction in a catastrophic avalanche. Fearing the same fate as the Pallid Sybils, the Advisors withdrew to their counsel chambers, suddenly anxious to avoid the Oracle's notice.The Graven King, however, was a creature of great practicality. He doubted the commitment of his overprudent Advisors. An Oracle of such rarity, he reasoned, ought be used as a weapon to enlarge his domain. He therefore demoted his timid counselors and stationed Nerif at his side. With only a blunt understanding of Nerif's talent, he boldly stated the outcomes he desired, and coaxed Nerif into uttering his wishes as prophecy.At first, all was well. The Last Graven King boasted that by adopting Fate's pet, he had made a plaything of Fate itself. He should have taken it as a warning then when, on the eve of his invasion of the Unsated Satrap's realm, he attempted to coerce a prediction of certain victory from his Oracle, only to hear Nerif quietly mutter, \"It could go either way.\" No firmer statement could he force from Nerif's lips. Still, the King was confident in his army. The Satrapy was landlocked, poorly armed, and shut off from all possible allies. He took \"It could go either way\" to indicate that with tactical might on his side, there was little risk in his plan.Of course, we now know that he should have taken the sayer's words more literally. Even with careful study of the Annotated Annals of If, what happened on the field before the Unsated Satrap's palace is almost impossible to visualize. It appears that in the midst of the carnage, the battle began to bifurcate. At each pivotal moment, reality calved and broke into bits. Soldiers who staggered and fell in battle also stood sure-footed, forging onward to fight. Their minds also split; the warriors found themselves both dead and alive, existent and non-existent. Victory and defeat were partitioned, so that each separate outcome was experienced in simultaneity by both armies. The universe became a hall of mirrors, with all the mirrors endlessly shattering.The immediate effect on both parties was insanity. Unable to comprehend the state of being both triumphant and defeated, the Graven King's mind dispersed into motes of madness. The naive Satrap fared no better. The opposing paired realities continued to split and split again, echoing into infinite histories, all of them populated by a bewildered populace that soon lost the ability to feed, clothe, defend, or reproduce itself in the traditional manner.Long before the repercussions had played out, however, Cymurri's wary Advisors had seized Nerif, bound and gagged him, and launched him out of their universe at high speed on a dimensional barque, in the hopes of depositing him where he could do them no harm forever. It was, of course, too late for them. And may well be for us.",
         "released": "2015-02-12",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -5256,7 +5256,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5280,9 +5280,9 @@
         "lore": "Like many great poets, Auroth just wants time to write, but the Winter Wyvern's life is full of interruptions. The epics of the Eldwurms have a long and colorful history, but some fear that the remaining dragon scholars are not as prolific as they once were, with few lines added to the Eldwurm Eddas since the last age of greatness. Auroth laments: \"We forget that there is more to life than triumph and dominion over enemies. We must also live our lives in the pursuit of creative expression.\" She embarks on research expeditions, collecting books for inspiration. But all this research can be terribly distracting, and she spends less time writing than she should. Although she knows she should be lurking in her lair, adding to the Eddas, she finds herself engaged in epic battles against powerful enemies. She loots castles, raids ancient libraries... and if she happens to heap glory on herself in the process, she tells herself that it's merely a side effect of her research. The fact is, while her skill and power on the battlefield are legendary, her scholarly travails have thus far hardly been the stuff of literary acclaim. But she is not content to stand as a protagonist of heroic lore. She wishes also to create it.",
         "released": "2015-02-12",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Support"
+            "Support",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -5303,7 +5303,7 @@
             "projectileSpeed": 700,
             "attackPoint": 0.25,
             "attackBackswing": 0.8,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 1200
@@ -5327,9 +5327,9 @@
         "lore": "Before the beginning of all, there existed a presence: a primordial mind, infinite, awesome, and set to inscrutable purpose. As the universe thundered into being, this mind was fragmented and scattered. Two among its greater fragments\u2014who would come to be named Radiant and Dire--found themselves locked in vicious opposition, and began twisting all of creation to serve their conflict.As war and cataclysm threatened the nascent cosmos, the will of a third fragment made itself known. Naming itself Zet, this intellect sought to resolve the disharmony and return all to perfect unity. Appalled by its kin's conflicting nature, Zet gathered the sum of its power. In a sudden flash, it overwhelmed its siblings, and fused the warring aspects into a stellar sphere before hurling them into the darkness to orbit a nondescript world. Harmony was restored, though only the barest fraction of Zet's strength remained. Setting its gaze on the prison, Zet chose to use its weakened power to serve as watchful warden until time's end. For uncounted aeons, this vigil stood.Life flourished upon the world below, oblivious to the dangers imprisoned within the softly glowing moon, or of Zet's struggles to contain them. As the captives' eternal clash reverberated within, the surface of the prison shuddered, over time beginning to crack. Ultimately, Zet's depleted power proved insufficient to contain the breach, and at last the moon was shattered. The prison's ancient inhabitants had escaped to sow their conflict anew.Flung to the farthest reaches by the prison's explosion, Zet was transformed by the dissonant energies of its former captives. No longer of single form and thought, its presence had become split among many\u2014some lesser, some greater\u2014each connected by a fleeting arc of consciousness. Struggling to suppress its own disunity, Zet sped toward the burgeoning conflict of its siblings, bending its fractured wills toward a singular conclusion: the aspects of the primordial mind must be made to reunite, or all must be destroyed lest the conflict spread further\u2026",
         "released": "2015-12-16",
         "roles": [
-            "Nuker",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -5350,7 +5350,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.3,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 285,
+            "movementSpeed": 285,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5398,7 +5398,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.45,
             "attackBackswing": 0.2,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5422,10 +5422,10 @@
         "lore": "Children love telling stories about the whimsical adventures of fairies... That's because children don't know that most fairies are spiteful jerks. And in the world of spiteful fairies there are few names spoken of with more contempt than Mireska Sunbreeze.Born to a fae merchant king, Mireska grew up in Revtel; a cutthroat nation where manipulation and murder were the norm. But while she was quite adept at navigating the etiquette, unspoken laws, and social rituals that permeated every element of her life, she found the whole thing rather boring.So, Mireska did what most rebellious children do: burn down her family estate and set off with her pet wisp Jex to live the life of a wandering grifter.",
         "released": "2017-10-31",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 20,
@@ -5446,7 +5446,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.3,
             "attackBackswing": 1.0,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5470,12 +5470,12 @@
         "lore": "The men and women that make up the Nivan Gallants live a life of swordplay, chandelier swinging, and tawdry romance. And while all adhere to their creed that \"A life of adventure is the only life worth living,\" the exploits of Dont\u00e9 Panlin still manage to raise the eyebrows of even the most hedonistic of swordsmen.There is no monster he won\u2019t slay. No creature he won\u2019t woo. No tyrant he won\u2019t stand against. And no noble immune to his silver tongue.",
         "released": "2017-10-31",
         "roles": [
+            "Durable",
             "Initiator",
             "Nuker",
             "Disabler",
-            "Durable",
-            "Carry",
-            "Escape"
+            "Escape",
+            "Carry"
         ],
         "stats": {
             "baseStrength": 19,
@@ -5496,7 +5496,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.33,
             "attackBackswing": 0.77,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5520,10 +5520,10 @@
         "lore": "The people of Ashkavor crowded around the temple square, eager to witness the ascension of their new guardian -- to stand near the man as he bound their souls to his own. But as his final brush strokes fell against the runestone, and the bond of a new Ascended One was forged, everyone -- even those who'd stayed in their homes -- could sense that something had gone terribly wrong.He knew the cause instantly. The droplets of ichor he'd procured to amplify the potency of his inkpots had instead contaminated them, and the power of the binding spell he'd cast now threatened to consume him. An inky corruption snaked upward from the runestone, along the handle of his brush, soon overtaking his hands. From there it spread quickly. Once it overcame his face and his mouth, he couldn't have screamed even if he'd wanted to.All of his life he'd calculated on how to attain ever greater powers than the limits presented by his teachers would allow--going so far as to break the sacred prohibition against augmenting the inks. Indeed, with the Wellspring of the Ascended Bond open to him, he felt a measure of power coursing into his soul like he'd never imagined. His greatest triumph was upon him, if he could only survive it.He drew deep from the power of the bond, pushing back against the corrupted ink flow. A great moan filled the air -- the collective cry of his people. Some swayed on their feet. The weakest collapsed. Many tried to run. And still deeper he pulled from their bloodline reservoir. But it wasn't enough to stop the ink tide.It was only when the breath trapped in his lungs began to fail him, and the inkpool darkness fully encased him, that he saw his way out. The bond he'd made with the Ashkavoran people -- his people -- meant to be drawn upon only in service of their protection... It flowed two ways.With a final surge of strength -- this time directed by more than just blind repulsion -- he pushed the ink torrent into the bond itself.Slowly, he felt the tide retreat... and heard the awful wails of his people as the corruption in turn rolled over them. When at last the ink relented, his eyes opened upon a world changed. The Ashkavoran people as he knew them were gone. Every last soul was transformed into terrifying shades of their former selves -- comprised no longer of blood and bone, only viscid, tainted ink.",
         "released": "2018-08-24",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -5544,7 +5544,7 @@
             "projectileSpeed": 900,
             "attackPoint": 0.35,
             "attackBackswing": 0.85,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5568,10 +5568,10 @@
         "lore": "Hoodwink's earliest years were spent in the idyllic expanse of green that once filled the edges of Krimwohl. But as that kingdom grew, and the needs of both her citizens and her armies became ravenous, rival ore and timber barons scratched and clawed to outpace each other in devouring the natural beauty of the border forests, gorging themselves to meet the demands of the changing land. To those living in the ancient timberlands, the choice came down to following the line of refugees into the pacified zones, falling to Krimwohl's black powder and steel while defending their homes, or fleeing further north to tempt fate in the haunted glens and groves of the misty Wood Tomo'kan. So it was in those treacherous northern mistwoods that Hoodwink came of age, dodging the horrific predators of the Tomo'kan, ingratiating herself with some of the local banditry whilst antagonizing others, and finding absolutely every which way to be underfoot whenever some interesting mischief arose--often allegedly the cause of it. But when the faintest whiff of Krimwohl's fires eventually drifted into her adopted home, Hoodwink's thoughts turned to any family and friends who might have survived the invasion--now made to eke out lives in the razed lands whose wounds scarred her very soul--and she couldn't help but approach the edges of civilization to get a glimpse of the devils that had destroyed her old life. There, she saw that the monsters from her childhood weren't monsters at all. They were just...people. Soldiers, laborers, merchants...and refugees. And the soldiers, even with their black powder and steel, were nothing compared to the dangers of the Tomo'kan--real dangers with tentacles and teeth--dangers she danced around like a twirling maple seed.  Knowing she can always find safe passage in the tangles of the Tomo'kan, where most warm-blooded folk wisely fear to tread, Hoodwink now strikes out against those who dare try to further pacify the wilds, happily taking what she likes from their belongings, destroying what she has no use for, and helping guide any kindred survivors back to a life in the green once again.",
         "released": "2020-12-17",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 17,
@@ -5592,7 +5592,7 @@
             "projectileSpeed": 1800,
             "attackPoint": 0.4,
             "attackBackswing": 1.5,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5616,10 +5616,10 @@
         "lore": "Not even the other spirits claim to understand the mind and machinations of the eldest amongst them, Inai the Void Spirit. Privy to secrets that would shatter a mortal mind, the Void Spirit observes the workings of the universe from an unknowable vantage, choosing to let carefully groomed servants do his bidding -- only emerging from his Hidden Temple into the material plane when he deems that he alone can steer the course of reality along its proper path.With an expansive perspective on existence, Inai is focused intently on a point in time beyond which he cannot see, when the fabrics of multiple realities are fated to collide. Now he steps from the aether to personally resolve the battle of the Ancients and prepare his allies for what he views as a greater conflict to come.",
         "released": "2019-11-26",
         "roles": [
-            "Nuker",
             "Disabler",
             "Escape",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 22,
@@ -5640,7 +5640,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 0.78,
-            "movementSpeedDaytime": 290,
+            "movementSpeed": 290,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5664,10 +5664,10 @@
         "lore": "Beatrix Snapfire and her dragon toad Mortimer are a welcome sight to the ragged folk who scratch out lives along the desert routes and oases scattered throughout Nanarak, the rain-forsaken gateway to the Outlands.As well known for her unrivaled skills as a weaponsmith as for dispensing wisdom, mirth, and the meanest firesnap cookies the world has ever seen, Beadie's survived to a ripe old age in a young keen's trade by being quick with her wits and even quicker with her guns.Indeed, the Outlands are littered with the bones of bandits and ne'er-do-wells who thought to take advantage of her small stature and propensity for kindness.",
         "released": "2019-11-26",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -5688,7 +5688,7 @@
             "projectileSpeed": 1800,
             "attackPoint": 0.35,
             "attackBackswing": 1.23,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5712,8 +5712,8 @@
         "lore": "Mars, first son of Heaven, spent a long existence waging endless war, and saw countless more crusades waged beneath the banner of his old name. Wars of conquest and of vengeance. Just and unjust... Always cruel. So much like his father, Mars indulged his basest impulses--with inclinations much more monstrous than those of Zeus--and he inflicted suffering untold.But as the epochs vanished behind him, the selfish ways of his father--the ways of many amongst his godly kin, they who judged him despicable--eventually began to ring hollow. War for its own sake was no longer enough to satisfy his desires. For the first time in his ageless days, the god of war began to question to what ends he swung his glorious spear.As the Fates would have it, his solution came easily: he must wage war for a larger purpose, and inspire more than mere savagery and sorrow at the sight of his crest. He must at last lay claim to the mantle of leadership that is his birthright, for the time has come to burn down the pantheon of the old age and build a just new empire atop the ashes of his kin. Only then might he find satisfaction, and make the glory of Mars evident to all.",
         "released": "2019-03-05",
         "roles": [
-            "Initiator",
             "Durable",
+            "Initiator",
             "Disabler",
             "Carry"
         ],
@@ -5736,7 +5736,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.4,
             "attackBackswing": 1.38,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.8,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5760,10 +5760,10 @@
         "lore": "Welcome, welcome, one and all \u2014 to a stage-lit extravaganza for the ages! Prepare to have your senses shattered! Your expectations demolished! Your Ancients smashed to ruins!Witness the impossible feats and derring-do of the one and only clockwork marvel, the Great Cogliostro Kettle \u2014 Ringmaster, torture artist, genius in his own time \u2014 here now for the sole agony and entertainment of any hero bold enough to draw back the crimson carnival curtain and behold what mysteries await inside.The mistake most maestros make is waiting for the public to come to them. The Ringmaster knows you need to go out and find your audience! Drag them to you. And make them watch.",
         "released": "2024-08-22",
         "roles": [
-            "Nuker",
             "Disabler",
+            "Escape",
             "Support",
-            "Escape"
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 21,
@@ -5784,7 +5784,7 @@
             "projectileSpeed": 1200,
             "attackPoint": 0.5,
             "attackBackswing": 0.93,
-            "movementSpeedDaytime": 310,
+            "movementSpeed": 310,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5830,7 +5830,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.46,
             "attackBackswing": 1.02,
-            "movementSpeedDaytime": 300,
+            "movementSpeed": 300,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5856,9 +5856,9 @@
         "roles": [
             "Initiator",
             "Disabler",
-            "Support",
+            "Escape",
             "Carry",
-            "Escape"
+            "Support"
         ],
         "stats": {
             "baseStrength": 23,
@@ -5879,7 +5879,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.3,
             "attackBackswing": 0.5,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 0.9,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5903,9 +5903,9 @@
         "lore": "Though the deterioration of the Mistwood and its evolution from idyllic expanse to death-filled tanglewild was a slow, wizard-fueled process, most scholars agree the true beginning of the end was marked by the interdimensional arrival of the Primal Beast. A creature hatched into an existence devoid of all feeling but hunger and pain, aeons of carnage shaped the Primal Beast into the apex predator on a planet filled with violent terrors. Desperately banished by would-be masters with failed hopes to control him, the beast was cast into a new world \u2014 one where he could ascend from mere hungry predator into an invasive killing machine with nothing able to stand in his way.For thousands of years, the Mistwood served as massive stomping ground for the beast's destructive play \u2014 and even the feared durana beasts made for tasty snacks. Indeed, there could be no rivals for the beast's territory, only minor annoyances. Until one such tiny annoyance employed vile trickery to trap the unstoppable Beast in the Gleipnir.There he might have remained subdued for eternity, were it not for the unpredictable powers of the Continuum Device. Now, freed from both Gleipnir and Vault, far afield from the Mistwood, and much closer to inhabited lands, the beast sets his snout towards new slaughters and the delights of savage destruction \u2014 and the paltry fires of civilization will do little to keep this ageless monster at bay.",
         "released": "2022-02-23",
         "roles": [
+            "Durable",
             "Initiator",
-            "Disabler",
-            "Durable"
+            "Disabler"
         ],
         "stats": {
             "baseStrength": 26,
@@ -5926,7 +5926,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.6,
             "attackBackswing": 0.7,
-            "movementSpeedDaytime": 305,
+            "movementSpeed": 305,
             "turnRate": 0.6,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -5950,9 +5950,9 @@
         "lore": "There are as many stories about Muerta as there are graves in the Carrion Fields of Gorm. Some tell their children ghost stories of a young peasant girl returned from the dead to punish the bandits who killed her family. Others, drunk in dark taverns, slur conspiracy theories about kidnappings and phantom guilds of killers.One constant bleeds through every tale: of a woman so consumed by hate for those who killed her that she refused to die. And of Death, so impressed by whatever hate-filled engine that drove this woman that he gave her Mercy and Grace \u2014 twin ethereal pistols \u2014 and made her his second in command. Now she hunts down wayward souls whose last grains have tumbled from their hourglass, and drags them kicking and screaming to their eternal reward.",
         "released": "2023-03-06",
         "roles": [
-            "Nuker",
             "Disabler",
-            "Carry"
+            "Carry",
+            "Nuker"
         ],
         "stats": {
             "baseStrength": 19,
@@ -5973,7 +5973,7 @@
             "projectileSpeed": 3000,
             "attackPoint": 0.35,
             "attackBackswing": 1.1,
-            "movementSpeedDaytime": 295,
+            "movementSpeed": 295,
             "turnRate": 0.7,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
@@ -6004,8 +6004,8 @@
         "stats": {
             "baseStrength": 19,
             "baseAgility": 27,
-            "baseIntelligence": 18,
-            "strengthGain": 2.6,
+            "baseIntelligence": 20,
+            "strengthGain": 2.8,
             "agilityGain": 3.5,
             "intelligenceGain": 1.7,
             "baseHealthRegeneration": 1.0,
@@ -6020,7 +6020,7 @@
             "projectileSpeed": 0,
             "attackPoint": 0.35,
             "attackBackswing": 1.12,
-            "movementSpeedDaytime": 315,
+            "movementSpeed": 315,
             "turnRate": 1.0,
             "visionRangeDaytime": 1800,
             "visionRangeNighttime": 800
