@@ -385,25 +385,14 @@ def calc_attack_range(row, lvl):
     return result
 
 
-def calc_movement_speed_daytime(row, lvl):
+def calc_movement_speed(row, lvl):
     if row["name"] == "Death Prophet":
         movement_speed_bonus = get_death_prophet_witchcraft(lvl)
     elif row["name"] == "Razor":
         movement_speed_bonus = get_razor_unstable_current(lvl)
     else:
         movement_speed_bonus = 1
-    result = int(row["movement_speed_daytime"] * movement_speed_bonus)
-    return result
-
-
-def calc_movement_speed_nighttime(row, lvl):
-    if row["name"] == "Death Prophet":
-        movement_speed_bonus = get_death_prophet_witchcraft(lvl)
-    elif row["name"] == "Razor":
-        movement_speed_bonus = get_razor_unstable_current(lvl)
-    else:
-        movement_speed_bonus = 1
-    result = int((row["movement_speed_daytime"] + 30) * movement_speed_bonus)
+    result = int(row["movement_speed"] * movement_speed_bonus)
     return result
 
 
