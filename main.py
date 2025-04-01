@@ -1,8 +1,8 @@
-import calc_stats
-import numpy as np
+import altair as alt
 import pandas as pd
 import streamlit as st
-import altair as alt
+
+import calc_stats
 
 df = pd.read_csv("./assets/data/latest_data.csv")
 
@@ -104,16 +104,27 @@ def get_comparison_chart(df, stats):
 
 
 def reshape_df(df, calc_function, stats):
-    df_stats = df.assign(
-        lvl_1=df.apply(calc_function, axis=1, lvl=1),
-        lvl_5=df.apply(calc_function, axis=1, lvl=5),
-        lvl_10=df.apply(calc_function, axis=1, lvl=10),
-        lvl_15=df.apply(calc_function, axis=1, lvl=15),
-        lvl_20=df.apply(calc_function, axis=1, lvl=20),
-        lvl_25=df.apply(calc_function, axis=1, lvl=25),
-        lvl_30=df.apply(calc_function, axis=1, lvl=30),
-    )[["name", "lvl_1", "lvl_5", "lvl_10", "lvl_15", "lvl_20", "lvl_25", "lvl_30"]]
-    df_reshape = df_stats.melt(id_vars=["name"], var_name="lvl", value_name=stats)
+    levels = [1, 5, 10, 15, 20, 25, 30]
+
+    # df_stats = df.assign(
+    #     lvl_1=df.apply(calc_function, axis=1, lvl=1),
+    #     lvl_5=df.apply(calc_function, axis=1, lvl=5),
+    #     lvl_10=df.apply(calc_function, axis=1, lvl=10),
+    #     lvl_15=df.apply(calc_function, axis=1, lvl=15),
+    #     lvl_20=df.apply(calc_function, axis=1, lvl=20),
+    #     lvl_25=df.apply(calc_function, axis=1, lvl=25),
+    #     lvl_30=df.apply(calc_function, axis=1, lvl=30),
+    # )
+    df_stats = df.copy()
+
+    for i in levels:
+        df_stats.loc[:, f"lvl_{i}"] = df_stats.apply(calc_function, axis=1, lvl=i)
+
+    df_selected_columns = df_stats.iloc[:, [1] + list(range(42, df_stats.shape[1]))]
+
+    df_reshape = df_selected_columns.melt(
+        id_vars=["name"], var_name="lvl", value_name=stats
+    )
 
     df_reshape["lvl"] = df_reshape["lvl"].str.replace("lvl_", "")
 

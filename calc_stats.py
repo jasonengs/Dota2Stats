@@ -1,5 +1,7 @@
 import numpy as np
 
+# Create Variable for storing base value
+
 
 def get_bonus_attributes(row, lvl):
     additional_bonus = 0 if row != "Morphling" else 3
@@ -29,17 +31,17 @@ def get_total_attributes(row_base, row_gain, lvl, bonus):
 
 # Dragon Knight for Health Regeneration and Armor
 def get_dragon_knight_dragon_blood(lvl):
-    result = 2 + lvl * 0.5
-    return result
+    bonus = 2 + lvl * 0.5
+    return bonus
 
 
 # Luna Innate
 def get_luna_lunar_blessing(lvl, stats):
     if stats.lower() == "attack damage":
-        result = 2 * lvl
+        bonus = 2 * lvl
     elif stats.lower() == "vision range nighttime":
-        result = 250 + (25 * lvl)
-    return result
+        bonus = 250 + (25 * lvl)
+    return bonus
 
 
 # Sven Facet
@@ -60,83 +62,83 @@ def get_sven_wrath_of_god(lvl):
 # Ursa Innate
 def get_ursa_maul(lvl):
     if lvl >= 1 and lvl <= 5:
-        health_as_damage = round(1.2 / 100, 3)
+        bonus_health_as_damage = round(1.2 / 100, 3)
     elif lvl >= 6 and lvl <= 11:
-        health_as_damage = round(1.3 / 100, 3)
+        bonus_health_as_damage = round(1.3 / 100, 3)
     elif lvl >= 12 and lvl <= 17:
-        health_as_damage = round(1.4 / 100, 3)
+        bonus_health_as_damage = round(1.4 / 100, 3)
     elif lvl >= 18:
-        health_as_damage = round(1.5 / 100, 3)
+        bonus_health_as_damage = round(1.5 / 100, 3)
     else:
-        health_as_damage = 0.0
-    return health_as_damage
+        bonus_health_as_damage = 0.0
+    return bonus_health_as_damage
 
 
 # Sniper Innate
 def get_sniper_keen_scope(lvl):
     if lvl >= 1 and lvl <= 5:
-        result = 160
+        bonus_attack_range = 160
     elif lvl >= 6 and lvl <= 11:
-        result = 260
+        bonus_attack_range = 260
     elif lvl >= 12 and lvl <= 17:
-        result = 360
+        bonus_attack_range = 360
     elif lvl >= 18:
-        result = 460
-    return result
+        bonus_attack_range = 460
+    return bonus_attack_range
 
 
 # Razor Innate
 def get_razor_unstable_current(lvl):
-    result = 1 + (lvl / 100)
-    return result
+    bonus_movement_speed = 1 + (lvl / 100)
+    return bonus_movement_speed
 
 
 # Death Prophet Innate
 def get_death_prophet_witchcraft(lvl):
-    result = 1 + (lvl * 0.5 / 100)
-    return result
+    bonus_movement_speed = 1 + (lvl * 0.5 / 100)
+    return bonus_movement_speed
 
 
 # Void Spirit Innate
 def get_void_spirit_intrinsic_edge():
-    result = 1.25
-    return result
+    bonus_on_secondary = 1.25
+    return bonus_on_secondary
 
 
 # Outwolrd Destroyer Innate
 def get_outworld_destroyer_ominous_discernment():
-    result = 2.5
-    return result
+    bonus_mana = 2.5
+    return bonus_mana
 
 
 # Crystal Maiden Innate
 def get_crystal_maiden_blueheart_floe(lvl):
     if lvl >= 1 and lvl <= 5:
-        mana_regeneration_amplification = 1.25
+        bonus_mana_regeneration_amplification = 1.25
     elif lvl >= 6 and lvl <= 11:
-        mana_regeneration_amplification = 1.50
+        bonus_mana_regeneration_amplification = 1.50
     elif lvl >= 12 and lvl <= 17:
-        mana_regeneration_amplification = 1.75
+        bonus_mana_regeneration_amplification = 1.75
     elif lvl >= 18:
-        mana_regeneration_amplification = 2.0
+        bonus_mana_regeneration_amplification = 2.0
     else:
-        mana_regeneration_amplification = 0.0
-    return mana_regeneration_amplification
+        bonus_mana_regeneration_amplification = 0.0
+    return bonus_mana_regeneration_amplification
 
 
 # Drow Ranger Innate
 def get_drow_ranger_precision_aura(lvl):
     if lvl >= 1 and lvl <= 5:
-        result = 1.04 + (lvl * 0.01)
+        bonus_agility = 1.04 + (lvl * 0.01)
     elif lvl >= 6 and lvl <= 11:
-        result = 1.08 + (lvl * 0.01)
+        bonus_agility = 1.08 + (lvl * 0.01)
     elif lvl >= 12 and lvl <= 17:
-        result = 1.12 + (lvl * 0.01)
+        bonus_agility = 1.12 + (lvl * 0.01)
     elif lvl >= 18:
-        result = 1.16 + (lvl * 0.01)
+        bonus_agility = 1.16 + (lvl * 0.01)
     else:
-        result = 0.0
-    return result
+        bonus_agility = 0.0
+    return bonus_agility
 
 
 def calc_total_strength(row, lvl):
@@ -173,8 +175,10 @@ def calc_total_intelligence(row, lvl):
 
 
 def calc_health(row, lvl):
+    base_health = 120
+    health_point = 22
     total_strength = np.floor(calc_total_strength(row, lvl))
-    result = 120 + total_strength * 22
+    result = base_health + total_strength * health_point
     return result
 
 
@@ -201,23 +205,35 @@ def calc_health_regeneration(row, lvl):
 
 
 def calc_mana(row, lvl):
-    total_intelligence = np.floor(calc_total_intelligence(row, lvl))
+    base_mana = 75 if row["name"] != "Ogre Magi" else 120
+    total_attribute = (
+        np.floor(calc_total_intelligence(row, lvl))
+        if row["name"] != "Ogre Magi"
+        else calc_total_strength(row, lvl)
+    )
+    mana_point = 12 if row["name"] != "Ogre Magi" else 6
     if row["name"] == "Huskar":
         result = np.nan
     elif row["name"] == "Ogre Magi":
-        total_strength = calc_total_strength(row, lvl)
-        result = 120 + np.floor(total_strength * 6)
+        result = base_mana + np.floor(total_attribute * mana_point)
     elif row["name"] == "Outworld Destroyer":
         mana_per_intelligence_bonus = get_outworld_destroyer_ominous_discernment()
-        result = round(75 + total_intelligence * (12 + mana_per_intelligence_bonus))
+        result = round(
+            base_mana + total_attribute * (mana_point + mana_per_intelligence_bonus)
+        )
     else:
-        result = 75 + total_intelligence * 12
+        result = base_mana + total_attribute * mana_point
     return result
 
 
 def calc_mana_regeneration(row, lvl):
-    total_intelligence = calc_total_intelligence(row, lvl)
-    mana_regeneration_per_intelligence = 0.05
+    total_attribute = (
+        calc_total_intelligence(row, lvl)
+        if row["name"] != "Ogre Magi"
+        else calc_total_strength(row, lvl)
+    )
+    # total_intelligence = calc_total_intelligence(row, lvl)
+    mana_regeneration_per_attribute = 0.05 if row["name"] != "Ogre Magi" else 0.02
     if row["name"] == "Huskar":
         result = np.nan
     elif row["name"] == "Lich":
@@ -227,21 +243,24 @@ def calc_mana_regeneration(row, lvl):
         result = round(
             (
                 row["base_mana_regeneration"]
-                + total_intelligence * mana_regeneration_per_intelligence
+                + total_attribute * mana_regeneration_per_attribute
             )
             * mana_regeneration_amplification,
             2,
         )
     elif row["name"] == "Ogre Magi":
-        total_strength = calc_total_strength(row, lvl)
-        result = round(row["base_mana_regeneration"] + total_strength * 0.02, 2)
+        result = round(
+            row["base_mana_regeneration"]
+            + total_attribute * mana_regeneration_per_attribute,
+            2,
+        )
     elif row["name"] == "Void Spirit":
         mana_regeneration_per_intelligence_bonus = get_void_spirit_intrinsic_edge()
         result = round(
             row["base_mana_regeneration"]
-            + total_intelligence
+            + total_attribute
             * (
-                mana_regeneration_per_intelligence
+                mana_regeneration_per_attribute
                 * mana_regeneration_per_intelligence_bonus
             ),
             2,
@@ -249,7 +268,7 @@ def calc_mana_regeneration(row, lvl):
     else:
         result = round(
             row["base_mana_regeneration"]
-            + total_intelligence * mana_regeneration_per_intelligence,
+            + total_attribute * mana_regeneration_per_attribute,
             2,
         )
     return result
@@ -284,6 +303,7 @@ def calc_armor(row, lvl):
 
 
 def calc_magic_resistance(row, lvl):
+    base_magic_resistance = 25
     magic_resistance_per_intelligence = 0.1
     total_intelligence = calc_total_intelligence(row, lvl)
     if row["name"] == "Void Spirit":
@@ -295,7 +315,7 @@ def calc_magic_resistance(row, lvl):
     else:
         magic_resistance_per_intelligence_bonus = 1
     result = round(
-        25
+        base_magic_resistance
         + total_intelligence
         * (magic_resistance_per_intelligence * magic_resistance_per_intelligence_bonus)
     )
@@ -351,12 +371,10 @@ def calc_attack_damage(row, lvl, stats):
         total_strength = calc_total_strength(row, lvl)
         total_agility = calc_total_agility(row, lvl)
         total_intelligence = calc_total_intelligence(row, lvl)
-
+        total_attributes = np.floor(total_strength + total_agility + total_intelligence)
         point_per_attribute = 0.45
         result = np.floor(
-            row[f"base_{stats}_attack"]
-            + np.floor(total_strength + total_agility + total_intelligence)
-            * point_per_attribute
+            row[f"base_{stats}_attack"] + total_attributes * point_per_attribute
         )
     return result
 
