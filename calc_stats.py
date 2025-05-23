@@ -1,9 +1,13 @@
+import math
+
 import numpy as np
+import pandas as pd
+from pandas import Series
 
 # Create Variable for storing base value
 
 
-def get_bonus_attributes(row, lvl):
+def get_bonus_attributes(row: str, lvl: int) -> int:
     additional_bonus = 0 if row != "Morphling" else 3
     if lvl >= 1 and lvl <= 16:
         bonus = 0 * (additional_bonus * 0)
@@ -24,19 +28,19 @@ def get_bonus_attributes(row, lvl):
     return bonus
 
 
-def get_total_attributes(row_base, row_gain, lvl, bonus):
+def get_total_attributes(row_base: int, row_gain: float, lvl: int, bonus: int) -> float:
     result = row_base + (row_gain * (lvl - 1)) + bonus
     return result
 
 
 # Dragon Knight for Health Regeneration and Armor
-def get_dragon_knight_dragon_blood(lvl):
+def get_dragon_knight_dragon_blood(lvl: str) -> float:
     bonus = 2 + lvl * 0.5
     return bonus
 
 
 # Luna Innate
-def get_luna_lunar_blessing(lvl, stats):
+def get_luna_lunar_blessing(lvl: int, stats: str) -> int:
     if stats.lower() == "attack damage":
         bonus = 2 * lvl
     elif stats.lower() == "vision range nighttime":
@@ -45,7 +49,7 @@ def get_luna_lunar_blessing(lvl, stats):
 
 
 # Sven Facet
-def get_sven_wrath_of_god(lvl):
+def get_sven_wrath_of_god(lvl: int) -> float:
     if lvl >= 1 and lvl <= 5:
         bonus_per_strength = 0.0
     elif lvl >= 6 and lvl <= 11:
@@ -60,7 +64,7 @@ def get_sven_wrath_of_god(lvl):
 
 
 # Ursa Innate
-def get_ursa_maul(lvl):
+def get_ursa_maul(lvl: int) -> float:
     if lvl >= 1 and lvl <= 5:
         bonus_health_as_damage = round(1.2 / 100, 3)
     elif lvl >= 6 and lvl <= 11:
@@ -75,7 +79,7 @@ def get_ursa_maul(lvl):
 
 
 # Sniper Innate
-def get_sniper_keen_scope(lvl):
+def get_sniper_keen_scope(lvl: int) -> int:
     if lvl >= 1 and lvl <= 5:
         bonus_attack_range = 160
     elif lvl >= 6 and lvl <= 11:
@@ -88,31 +92,31 @@ def get_sniper_keen_scope(lvl):
 
 
 # Razor Innate
-def get_razor_unstable_current(lvl):
+def get_razor_unstable_current(lvl: int) -> float:
     bonus_movement_speed = 1 + (lvl / 100)
     return bonus_movement_speed
 
 
 # Death Prophet Innate
-def get_death_prophet_witchcraft(lvl):
+def get_death_prophet_witchcraft(lvl: int) -> float:
     bonus_movement_speed = 1 + (lvl * 0.5 / 100)
     return bonus_movement_speed
 
 
 # Void Spirit Innate
-def get_void_spirit_intrinsic_edge():
+def get_void_spirit_intrinsic_edge() -> float:
     bonus_on_secondary = 1.25
     return bonus_on_secondary
 
 
 # Outwolrd Destroyer Innate
-def get_outworld_destroyer_ominous_discernment():
+def get_outworld_destroyer_ominous_discernment() -> float:
     bonus_mana = 2.5
     return bonus_mana
 
 
 # Crystal Maiden Innate
-def get_crystal_maiden_blueheart_floe(lvl):
+def get_crystal_maiden_blueheart_floe(lvl: int) -> float:
     if lvl >= 1 and lvl <= 5:
         bonus_mana_regeneration_amplification = 1.25
     elif lvl >= 6 and lvl <= 11:
@@ -127,7 +131,7 @@ def get_crystal_maiden_blueheart_floe(lvl):
 
 
 # Drow Ranger Innate
-def get_drow_ranger_precision_aura(lvl):
+def get_drow_ranger_precision_aura(lvl: int) -> float:
     if lvl >= 1 and lvl <= 5:
         bonus_agility = 1.04 + (lvl * 0.01)
     elif lvl >= 6 and lvl <= 11:
@@ -141,7 +145,25 @@ def get_drow_ranger_precision_aura(lvl):
     return bonus_agility
 
 
-def calc_total_strength(row, lvl):
+# Slardar Innate only applies when on puddles, trail, river
+def get_slardar_seaborn_sentinel(lvl: int, bonus_type: str) -> int | float:
+    movement_speed_bonus = 1 + (18 / 100)
+    if lvl >= 1 and lvl <= 5:
+        bonuses = {"health_regeneration": 2.5, "armor": 3, "attack_damage": 8}
+    elif lvl >= 6 and lvl <= 11:
+        bonuses = {"health_regeneration": 5, "armor": 4, "attack_damage": 16}
+    elif lvl >= 12 and lvl <= 17:
+        bonuses = {"health_regeneration": 7.5, "armor": 5, "attack_damage": 24}
+    elif lvl >= 18:
+        bonuses = {"health_regeneration": 10, "armor": 6, "attack_damage": 32}
+    else:
+        bonuses = {"health_regeneration": 0.0, "armor": 0, "attack_damage": 0}
+    bonuses["movement_speed"] = movement_speed_bonus
+    result = bonuses[bonus_type.lower().replace(" ", "_")]
+    return result
+
+
+def calc_total_strength(row: Series, lvl: int) -> float:
     # Invoker has no bonus attribute
     bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
     result = get_total_attributes(
@@ -150,7 +172,7 @@ def calc_total_strength(row, lvl):
     return result
 
 
-def calc_total_agility(row, lvl):
+def calc_total_agility(row: Series, lvl: int) -> float:
     # Invoker has no bonus attribute
     bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
     total_agility = get_total_attributes(
@@ -165,7 +187,7 @@ def calc_total_agility(row, lvl):
     return result
 
 
-def calc_total_intelligence(row, lvl):
+def calc_total_intelligence(row: Series, lvl: int) -> float:
     # Invoker has no bonus attribute
     bonus = 0 if row["name"] == "Invoker" else get_bonus_attributes(row["name"], lvl)
     result = get_total_attributes(
@@ -174,19 +196,24 @@ def calc_total_intelligence(row, lvl):
     return result
 
 
-def calc_health(row, lvl):
+def calc_health(row: Series, lvl: int) -> int:
     base_health = 120
     health_point = 22
-    total_strength = np.floor(calc_total_strength(row, lvl))
+    total_strength = math.floor(calc_total_strength(row, lvl))
     result = base_health + total_strength * health_point
     return result
 
 
-def calc_health_regeneration(row, lvl):
+def calc_health_regeneration(row: Series, lvl: int) -> float:
     total_strength = calc_total_strength(row, lvl)
     health_regeneration_per_strength = 0.1
     if row["name"] == "Dragon Knight":
         health_regeneration_bonus = get_dragon_knight_dragon_blood(lvl)
+        health_regeneration_per_strength_bonus = 1
+        # elif row["name"] == "Slardar":
+        #     health_regeneration_bonus = get_slardar_seaborn_sentinel(
+        #         lvl, "health regeneration"
+        #     )
         health_regeneration_per_strength_bonus = 1
     elif row["name"] == "Void Spirit":
         health_regeneration_bonus = 0
@@ -204,18 +231,18 @@ def calc_health_regeneration(row, lvl):
     return result
 
 
-def calc_mana(row, lvl):
+def calc_mana(row: Series, lvl: int) -> int:
     base_mana = 75 if row["name"] != "Ogre Magi" else 120
     total_attribute = (
-        np.floor(calc_total_intelligence(row, lvl))
+        math.floor(calc_total_intelligence(row, lvl))
         if row["name"] != "Ogre Magi"
         else calc_total_strength(row, lvl)
     )
     mana_point = 12 if row["name"] != "Ogre Magi" else 6
     if row["name"] == "Huskar":
-        result = np.nan
+        result = pd.NA
     elif row["name"] == "Ogre Magi":
-        result = base_mana + np.floor(total_attribute * mana_point)
+        result = base_mana + math.floor(total_attribute * mana_point)
     elif row["name"] == "Outworld Destroyer":
         mana_per_intelligence_bonus = get_outworld_destroyer_ominous_discernment()
         result = round(
@@ -226,7 +253,7 @@ def calc_mana(row, lvl):
     return result
 
 
-def calc_mana_regeneration(row, lvl):
+def calc_mana_regeneration(row: Series, lvl: int) -> float:
     total_attribute = (
         calc_total_intelligence(row, lvl)
         if row["name"] != "Ogre Magi"
@@ -237,7 +264,7 @@ def calc_mana_regeneration(row, lvl):
     if row["name"] == "Huskar":
         result = np.nan
     elif row["name"] == "Lich":
-        result = np.float32(0)
+        result = 0.0
     elif row["name"] == "Crystal Maiden":
         mana_regeneration_amplification = get_crystal_maiden_blueheart_floe(lvl)
         result = round(
@@ -274,17 +301,20 @@ def calc_mana_regeneration(row, lvl):
     return result
 
 
-def calc_attack_speed(row, lvl):
+def calc_attack_speed(row: Series, lvl: int) -> int:
     total_agility = calc_total_agility(row, lvl)
     result = round(row["base_attack_speed"] + total_agility)
     return result
 
 
-def calc_armor(row, lvl):
+def calc_armor(row: Series, lvl: int) -> float:
     total_agility = calc_total_agility(row, lvl)
     armor_per_agility = 1 / 6
     if row["name"] == "Dragon Knight":
         armor_bonus = get_dragon_knight_dragon_blood(lvl)
+        armor_per_agility_bonus = 1
+        # elif row["name"] == "Slardar":
+        #     armor_bonus = get_slardar_seaborn_sentinel(lvl, "armor")
         armor_per_agility_bonus = 1
     elif row["name"] == "Void Spirit":
         armor_bonus = 0
@@ -302,7 +332,7 @@ def calc_armor(row, lvl):
     return result
 
 
-def calc_magic_resistance(row, lvl):
+def calc_magic_resistance(row: Series, lvl: int) -> int:
     base_magic_resistance = 25
     magic_resistance_per_intelligence = 0.1
     total_intelligence = calc_total_intelligence(row, lvl)
@@ -322,36 +352,38 @@ def calc_magic_resistance(row, lvl):
     return result
 
 
-def calc_attack_damage(row, lvl, stats):
+def calc_attack_damage(row: Series, lvl: int, stats: str) -> int:
     if row["primary_attribute"] == "Strength":
         total_strength = calc_total_strength(row, lvl)
         if row["name"] == "Sven":
             attack_damage_bonus = get_sven_wrath_of_god(lvl)
+        # elif row["name"] == "Slardar":
+        #     attack_damage_bonus = get_slardar_seaborn_sentinel(lvl, "attack damage")
         else:
             attack_damage_bonus = 0
 
-        result = np.floor(
+        result = math.floor(
             (row[f"base_{stats}_attack"])
             + total_strength
-            + np.floor(total_strength * attack_damage_bonus)
+            + math.floor(total_strength * attack_damage_bonus)
         )
     elif row["primary_attribute"] == "Agility":
         total_agility = calc_total_agility(row, lvl)
         if row["name"] == "Luna":
             attack_damage_bonus = get_luna_lunar_blessing(lvl, "attack damage")
-            result = np.floor(
+            result = math.floor(
                 row[f"base_{stats}_attack"] + total_agility + attack_damage_bonus
             )
         elif row["name"] == "Ursa":
             total_health = calc_health(row, lvl)
             attack_damage_bonus = get_ursa_maul(lvl)
-            result = np.floor(
+            result = math.floor(
                 row[f"base_{stats}_attack"]
-                + np.floor(total_agility)
+                + math.floor(total_agility)
                 + (total_health * attack_damage_bonus)
             )
         else:
-            result = np.floor(row[f"base_{stats}_attack"] + total_agility)
+            result = math.floor(row[f"base_{stats}_attack"] + total_agility)
     elif row["primary_attribute"] == "Intelligence":
         total_intelligence = calc_total_intelligence(row, lvl)
         if row["name"] == "Jakiro":
@@ -359,42 +391,44 @@ def calc_attack_damage(row, lvl, stats):
             total_attack_damage_reduction = (
                 row["base_avg_attack"] + total_intelligence
             ) * attack_damage_reduction
-            result = np.floor(
+            result = math.floor(
                 row[f"base_{stats}_attack"]
                 + total_intelligence
-                - np.floor(total_attack_damage_reduction)
+                - math.floor(total_attack_damage_reduction)
             )
         else:
-            result = np.floor((row[f"base_{stats}_attack"] + total_intelligence))
+            result = math.floor((row[f"base_{stats}_attack"] + total_intelligence))
 
     elif row["primary_attribute"] == "Universal":
         total_strength = calc_total_strength(row, lvl)
         total_agility = calc_total_agility(row, lvl)
         total_intelligence = calc_total_intelligence(row, lvl)
-        total_attributes = np.floor(total_strength + total_agility + total_intelligence)
+        total_attributes = math.floor(
+            total_strength + total_agility + total_intelligence
+        )
         point_per_attribute = 0.45
-        result = np.floor(
+        result = math.floor(
             row[f"base_{stats}_attack"] + total_attributes * point_per_attribute
         )
     return result
 
 
-def calc_min_attack_damage(row, lvl):
+def calc_min_attack_damage(row: Series, lvl: int) -> int:
     result = calc_attack_damage(row, lvl, "min")
     return result
 
 
-def calc_max_attack_damage(row, lvl):
+def calc_max_attack_damage(row: Series, lvl: int) -> int:
     result = calc_attack_damage(row, lvl, "max")
     return result
 
 
-def calc_avg_attack_damage(row, lvl):
+def calc_avg_attack_damage(row: Series, lvl: int) -> int:
     result = calc_attack_damage(row, lvl, "avg")
     return result
 
 
-def calc_attack_range(row, lvl):
+def calc_attack_range(row: Series, lvl: int) -> int:
     if row["name"] == "Sniper":
         attack_range_bonus = get_sniper_keen_scope(lvl)
     else:
@@ -403,18 +437,20 @@ def calc_attack_range(row, lvl):
     return result
 
 
-def calc_movement_speed(row, lvl):
+def calc_movement_speed(row: Series, lvl: int) -> int:
     if row["name"] == "Death Prophet":
         movement_speed_bonus = get_death_prophet_witchcraft(lvl)
     elif row["name"] == "Razor":
         movement_speed_bonus = get_razor_unstable_current(lvl)
+    # elif row["name"] == "Slardar":
+    #     movement_speed_bonus = get_slardar_seaborn_sentinel(lvl, "movement speed")
     else:
         movement_speed_bonus = 1
     result = int(row["movement_speed"] * movement_speed_bonus)
     return result
 
 
-def calc_vision_range_nighttime(row, lvl):
+def calc_vision_range_nighttime(row: Series, lvl: int) -> int:
     if row["name"] == "Luna":
         vision_range_nighttime_bonus = get_luna_lunar_blessing(
             lvl, "vision range nighttime"
