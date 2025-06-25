@@ -19,7 +19,7 @@ df = df.drop(
     ]
 )
 
-# Battider
+# Batrider
 
 df.loc[(df["name"] == "Batrider"), ["movement_speed"]] = 320
 
@@ -41,7 +41,7 @@ df.loc[
 ] -= 5
 
 # Gyrocopter
-df.loc[(df["name"] == "Gyrocopter"), ["base_armor"]] = 1
+df.loc[(df["name"] == "Gyrocopter"), ["base_armor"]] -= 1
 
 # Invoker
 df.loc[
@@ -65,7 +65,7 @@ df.loc[(df["name"] == "Lifestealer"), ["base_strength"]] = 23
 df.loc[(df["name"] == "Marci"), ["agility_gain"]] = 2.2
 
 # Meepo
-df.loc[(df["name"] == "Meepo"), ["base_armor"]] = 3
+df.loc[(df["name"] == "Meepo"), ["base_armor"]] -= 1
 
 # Morphling
 df.loc[(df["name"] == "Morphling"), ["strength_gain", "base_mana_regeneration"]] = [
@@ -86,22 +86,22 @@ df.loc[(df["name"] == "Ogre Magi"), ["base_strength"]] = 25
 df.loc[(df["name"] == "Oracle"), ["attack_range"]] = 625
 
 # Phantom Lancer
-df.loc[(df["name"] == "Phantom Lancer"), ["base_health_regeneration"]] = 2
+df.loc[(df["name"] == "Phantom Lancer"), ["base_health_regeneration"]] += 0.5
 
 # Skywrath Mage
 df.loc[(df["name"] == "Skywrath Mage"), ["base_intelligence"]] = 25
 
 # Slardar
-df.loc[(df["name"] == "Slardar"), ["base_armor"]] = 2
+df.loc[(df["name"] == "Slardar"), ["base_armor"]] -= 1
 
 # Techies
 df.loc[(df["name"] == "Techies"), ["movement_speed"]] = 310
 
 # Terrorblade
-df.loc[(df["name"] == "Terrorblade"), ["base_health_regeneration"]] = 0.5
+df.loc[(df["name"] == "Terrorblade"), ["base_health_regeneration"]] -= 1
 
 # Tinker
-df.loc[(df["name"] == "Tinker"), ["base_armor"]] = 2
+df.loc[(df["name"] == "Tinker"), ["base_armor"]] -= 2
 
 # Undying
 df.loc[
