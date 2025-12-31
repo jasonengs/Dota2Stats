@@ -1,0 +1,13 @@
+[project]
+name = "dota2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "aiohttp>=3.13.2",
+    "altair>=6.0.0",
+    "pandas>=2.3.3",
+    "streamlit>=1.52.2",
+]
